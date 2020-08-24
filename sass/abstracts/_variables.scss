@@ -1,0 +1,21 @@
+// COLORS
+$color-white: #fff;
+$color-background: #f7f7f7;
+$color-text-dark: #4e4e4e;
+
+$color-primary: #e4eded;
+$color-accent: #70cec8;
+
+// FONTS
+$font-primary: 'open sans', sans-serif;
+$font-heading: span;
+@font-face {
+    font-family: chalista;
+    src: url(../../css/fonts/challista/challista.ttf);
+}
+
+//FONT-SIZE
+$font-size-xlarge: 8.5rem;
+$font-size-large: 5rem;
+$font-size-medium: 1.75rem;
+$font-size-small: .5rem;

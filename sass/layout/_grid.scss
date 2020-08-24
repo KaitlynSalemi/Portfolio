@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-rows: min-content;
+}
+
+.navigation {
+    grid-row: 1 / 1;
+    grid-column: 1 / -1;
+}
+
+.header {
+    // grid-row: ;
+    // grid-column: ;
+}
+
+.main {
+    // grid-row: ;
+    // grid-column: ;
+}
+
+.footer {
+    // grid-row: ;
+    // grid-column: ;
+}
