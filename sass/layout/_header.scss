@@ -1,0 +1,31 @@
+.introduction {
+
+    &__block {
+        background-color: $color-primary;
+        content: "";
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__img {
+        width: 10rem;
+        display: block;
+    }
+
+    &__text {
+
+        &__heading {
+
+        }
+        
+        &__paragraph {
+
+        }
+
+        &__link {
+
+        }
+    }
+}
