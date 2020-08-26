@@ -7,9 +7,12 @@
 }
 
 .heading-2 {
+    @include lineHeightCrop(1.6);
     font-family: $font-heading;
     font-size: $font-size-large;
-    @include lineHeightCrop(1.6);
+    padding: 0 .3rem .2rem .3rem;
+    background: linear-gradient(to top, $color-accent 35%, transparent 35%);
+    font-weight: 500;
 }
 
 .heading-3 {

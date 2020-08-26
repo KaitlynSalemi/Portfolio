@@ -30,7 +30,10 @@ body {
 
 .heading-2 {
   font-family: span;
-  font-size: 5rem; }
+  font-size: 5rem;
+  padding: 0 .3rem .2rem .3rem;
+  background: linear-gradient(to top, #70cec8 35%, transparent 35%);
+  font-weight: 500; }
   .heading-2::before, .heading-2::after {
     content: '';
     display: block;
@@ -40,6 +43,20 @@ body {
 
 .heading-3 {
   font-size: 2.4rem; }
+
+.link-btn:link, .link-btn:visited {
+  color: #4e4e4e;
+  text-decoration: none;
+  border-bottom: 1px solid #4e4e4e;
+  padding: .1rem; }
+
+.link-btn:hover {
+  color: #70cec8;
+  border-color: #70cec8;
+  transform: translateY(-2px); }
+
+.link-btn:active {
+  transform: translateY(0); }
 
 .footer {
   background-color: #4e4e4e; }
@@ -99,18 +116,14 @@ body {
   width: 100%; }
 
 .introduction__text {
+  display: flex;
+  justify-items: start;
   padding-left: 3rem; }
   .introduction__text__heading {
     margin-bottom: 1.5rem; }
   .introduction__text__paragraph {
     margin-bottom: 3rem;
     width: 45rem; }
-  .introduction__text__link:link, .introduction__text__link:visited {
-    display: block;
-    color: #4e4e4e;
-    text-decoration: none;
-    border-bottom: 1px solid #4e4e4e;
-    padding: .2rem; }
 
 .svg-container {
   display: flex;
@@ -119,7 +132,7 @@ body {
   padding-top: 1rem;
   padding-bottom: 13rem; }
   .svg-container .down-arrow {
-    fill: #4e4e4e;
+    fill: #989898;
     width: 6rem;
     height: 6rem; }
 

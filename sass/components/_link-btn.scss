@@ -1,0 +1,19 @@
+.link-btn {
+    &:link,
+    &:visited {
+        color: $color-text-dark;
+        text-decoration: none;
+        border-bottom: 1px solid $color-text-dark;
+        padding: .1rem;
+    }
+
+    &:hover {
+        color: $color-accent;
+        border-color: $color-accent;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
