@@ -10,13 +10,27 @@
 
         &-item {
 
-            &__link:link,
-            &__link:visited {
-                color: $color-text-dark;
-                text-decoration: none;
-                text-transform: uppercase;
-                padding: 1.5rem 2rem;
+            &__link {
+                display: block;
+
+                &:link,
+                &:visited {
+                    color: $color-text-dark;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding: 1.5rem 2rem;
+                }
+
+                &:hover {
+                    color: $color-text-light;
+                    transform: translateY(-2px);
+                }
+
+                &:active {
+                    transform: translateY(0);
+                }
             }
+            
         }
     }
 

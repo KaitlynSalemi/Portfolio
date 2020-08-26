@@ -33,14 +33,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 1rem;
+    padding-top: 3rem;
     padding-bottom: 13rem;
 
     .down-arrow {
         fill: $color-text-light;
         width: 6rem;
         height: 6rem;
-        
+        animation: bounce 2s infinite;
     }
 }
 

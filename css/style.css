@@ -2,6 +2,18 @@
   font-family: chalista;
   src: url(../../css/fonts/challista/challista.ttf); }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0); }
+  15% {
+    transform: translateY(-3rem); }
+  25% {
+    transform: translateY(0); }
+  35% {
+    transform: translateY(-1rem); }
+  45% {
+    transform: translateY(0); } }
+
 *,
 *::before,
 *::after {
@@ -129,12 +141,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 13rem; }
   .svg-container .down-arrow {
     fill: #989898;
     width: 6rem;
-    height: 6rem; }
+    height: 6rem;
+    animation: bounce 2s infinite; }
 
 .navigation {
   display: flex;
@@ -144,11 +157,18 @@ body {
   .navigation__list {
     display: flex;
     list-style: none; }
-    .navigation__list-item__link:link, .navigation__list-item__link:visited {
-      color: #4e4e4e;
-      text-decoration: none;
-      text-transform: uppercase;
-      padding: 1.5rem 2rem; }
+    .navigation__list-item__link {
+      display: block; }
+      .navigation__list-item__link:link, .navigation__list-item__link:visited {
+        color: #4e4e4e;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1.5rem 2rem; }
+      .navigation__list-item__link:hover {
+        color: #989898;
+        transform: translateY(-2px); }
+      .navigation__list-item__link:active {
+        transform: translateY(0); }
 
 .section-projects {
   background-color: #fff; }
