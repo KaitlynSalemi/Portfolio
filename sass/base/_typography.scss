@@ -1,12 +1,17 @@
 .heading-1 {
     font-family: chalista, leander-script-pro, sans-serif;
     font-size: $font-size-xlarge;
-    line-height: 1;
     font-weight: 100;
+    line-height: 1;
     letter-spacing: 0;
 }
 
-.navigation__list-item__link {
+.heading-2 {
+    font-family: $font-heading;
+    font-size: $font-size-large;
+    @include lineHeightCrop(1.6);
+}
+
+.heading-3 {
     font-size: $font-size-medium;
-    font-weight: 100;
 }

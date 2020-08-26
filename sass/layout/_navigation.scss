@@ -1,23 +1,23 @@
-// .navigation {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 4rem 10rem;
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 10rem;
 
-//     &__list {
-//         display: flex;
-//         list-style: none;
+    &__list {
+        display: flex;
+        list-style: none;
 
-//         &-item {
+        &-item {
 
-//             &__link:link,
-//             &__link:visited {
-//                 color: $color-text-dark;
-//                 text-decoration: none;
-//                 text-transform: uppercase;
-//                 padding: 1.5rem 2rem;
-//             }
-//         }
-//     }
+            &__link:link,
+            &__link:visited {
+                color: $color-text-dark;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 1.5rem 2rem;
+            }
+        }
+    }
 
-// }
+}

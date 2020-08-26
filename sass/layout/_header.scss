@@ -10,22 +10,44 @@
     }
 
     &__img {
-        width: 10rem;
-        display: block;
+        width: 100%;
     }
 
     &__text {
+        padding-left: 3rem;
 
         &__heading {
-
+            margin-bottom: 1.5rem;
         }
         
         &__paragraph {
-
+            margin-bottom: 3rem;
+            width: 45rem;
         }
 
-        &__link {
-
+        &__link:link,
+        &__link:visited {
+            display: block;
+            color: $color-text-dark;
+            text-decoration: none;
+            border-bottom: 1px solid $color-text-dark;
+            padding: .2rem;
         }
     }
 }
+
+.svg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 13rem;
+
+    .down-arrow {
+        fill: $color-text-dark;
+        width: 6rem;
+        height: 6rem;
+        
+    }
+}
+
