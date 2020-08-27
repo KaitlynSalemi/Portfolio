@@ -55,7 +55,7 @@
     grid-column: 1 / -1;
 
     display: grid;
-    grid-template-rows: 190vh max-content 85vh;
+    grid-template-rows: 190vh 75vh 85vh;
 
     .section-projects {
         grid-row: 1 / span 1;
@@ -126,6 +126,16 @@
         &__cards {
             grid-row: 4 / span 1;
             grid-column: 2 / span 1;
+
+            display: grid;
+            grid-template-columns: repeat(4, 19.3rem);
+            grid-column-gap: 7.7rem;
+
+            .resume-card {
+                display: grid;
+                grid-template-rows: 8.8rem repeat(2, min-content);
+                // grid-row-gap: 2rem;
+            }
         }
     }
 

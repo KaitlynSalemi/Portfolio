@@ -70,19 +70,19 @@ body {
   .btn:hover {
     background-color: #e4ededb4; }
 
-.link-btn:link, .link-btn:visited {
-  color: #4e4e4e;
-  text-decoration: none;
-  border-bottom: 1px solid #4e4e4e;
-  padding: .1rem; }
-
-.link-btn:hover {
-  color: #70cec8;
-  border-color: #70cec8;
-  transform: translateY(-2px); }
-
-.link-btn:active {
-  transform: translateY(0); }
+.link-btn {
+  transition: transform .2s; }
+  .link-btn:link, .link-btn:visited {
+    color: #4e4e4e;
+    text-decoration: none;
+    border-bottom: 1px solid #4e4e4e;
+    padding: .1rem; }
+  .link-btn:hover {
+    color: #70cec8;
+    border-color: #70cec8;
+    transform: translateY(-2px); }
+  .link-btn:active {
+    transform: translateY(0); }
 
 .footer {
   background-color: #4e4e4e; }
@@ -126,7 +126,7 @@ body {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   display: grid;
-  grid-template-rows: 190vh max-content 85vh; }
+  grid-template-rows: 190vh 75vh 85vh; }
   .main-container .section-projects {
     grid-row: 1 / span 1;
     grid-column: 1 / -1;
@@ -171,7 +171,13 @@ body {
       grid-column: 1 / -1; }
     .main-container .section-resume__cards {
       grid-row: 4 / span 1;
-      grid-column: 2 / span 1; }
+      grid-column: 2 / span 1;
+      display: grid;
+      grid-template-columns: repeat(4, 19.3rem);
+      grid-column-gap: 7.7rem; }
+      .main-container .section-resume__cards .resume-card {
+        display: grid;
+        grid-template-rows: 8.8rem repeat(2, min-content); }
   .main-container .section-contact {
     grid-row: 3 / span 1;
     grid-column: 1 / -1; }
@@ -272,28 +278,54 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 6rem; }
-  .section-resume__download:link, .section-resume__download:visited {
-    color: #4e4e4e;
-    text-decoration: none;
-    padding: .1rem; }
-  .section-resume__download:hover {
-    color: #989898;
-    transform: translateY(-2px); }
-  .section-resume__download:active {
-    transform: translateY(0); }
-  .section-resume__download .download-svg-container {
-    padding-top: .2rem;
-    padding-left: .5rem; }
-  .section-resume__download .download-svg {
-    fill: #4e4e4e;
-    width: 1.5rem;
-    height: 1.5rem; }
+  .section-resume__download__link {
+    display: flex;
+    align-items: center;
+    transition: transform .2s; }
+    .section-resume__download__link:link, .section-resume__download__link:visited {
+      color: #4e4e4e;
+      text-decoration: none;
+      padding: .1rem; }
+    .section-resume__download__link:hover {
+      color: #989898;
+      transform: translateY(-2px); }
+      .section-resume__download__link:hover .download-svg {
+        fill: #989898; }
+    .section-resume__download__link:active {
+      transform: translateY(0); }
+    .section-resume__download__link .download-svg-container {
+      padding-top: .2rem;
+      padding-left: .5rem; }
+    .section-resume__download__link .download-svg {
+      fill: #4e4e4e;
+      width: 1.5rem;
+      height: 1.5rem; }
+      .section-resume__download__link .download-svg:hover {
+        fill: #989898; }
 
 .section-resume__block {
   background-color: #e4eded; }
 
-.section-resume__cards {
-  background-color: aquamarine; }
+.section-resume__cards .resume-card {
+  background-color: white;
+  padding: 3rem 2rem 0 2rem;
+  justify-items: center;
+  align-content: start;
+  transition: transform .3s; }
+  .section-resume__cards .resume-card:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+  .section-resume__cards .resume-card__svg {
+    fill: #70cec8;
+    width: 9rem;
+    height: 9rem; }
+  .section-resume__cards .resume-card__heading {
+    margin-top: 3rem;
+    margin-bottom: 1rem; }
+  .section-resume__cards .resume-card__list {
+    list-style: none;
+    text-align: center; }
+    .section-resume__cards .resume-card__list--item {
+      margin: .3rem; }
 
 .section-contact {
   background-color: #fff; }

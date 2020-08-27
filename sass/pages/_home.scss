@@ -11,7 +11,6 @@
     }
 
     &__cards {
-        // background-color: peachpuff;
 
         .project-card {
             background-color: white;
@@ -63,32 +62,47 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 6rem;
+        
 
-        &:link,
-        &:visited {
-            color: $color-text-dark;
-            text-decoration: none;
-            padding: .1rem;
-        }
+        &__link {
+            display: flex;
+            align-items: center;
+            transition: transform .2s;
 
-        &:hover {
-            color: $color-text-light;
-            transform: translateY(-2px);
-        }
+            &:link,
+            &:visited {
+                color: $color-text-dark;
+                text-decoration: none;
+                padding: .1rem;
+            }
 
-        &:active {
-            transform: translateY(0);
-        }
+            &:hover {
+                color: $color-text-light;
+                transform: translateY(-2px);
 
-        .download-svg-container {
-            padding-top: .2rem;
-            padding-left: .5rem;
-        }
+                .download-svg {
+                    fill: $color-text-light;
+                }
+            }
 
-        .download-svg {
-            fill: $color-text-dark;
-            width: 1.5rem;
-            height: 1.5rem;
+            &:active {
+                transform: translateY(0);
+            }
+
+            .download-svg-container {
+                padding-top: .2rem;
+                padding-left: .5rem;
+            }
+
+            .download-svg {
+                fill: $color-text-dark;
+                width: 1.5rem;
+                height: 1.5rem;
+
+                &:hover{
+                    fill: $color-text-light;
+                }
+            }
         }
     }
 
@@ -97,7 +111,38 @@
     }
 
     &__cards {
-        background-color: aquamarine;
+
+        .resume-card {
+            background-color: white;
+            padding: 3rem 2rem 0 2rem;
+            justify-items: center;
+            align-content: start;
+            transition: transform .3s;
+
+            &:hover {
+                transform: translateY(-1.5rem) scale(1.03);
+            }
+
+            &__svg {
+                fill: $color-accent;
+                width: 9rem;
+                height: 9rem;
+            }
+
+            &__heading {
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            &__list {
+                list-style: none;
+                text-align: center;
+
+                &--item {
+                    margin: .3rem;
+                }
+            }
+        }
     }
 }
 

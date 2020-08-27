@@ -1,4 +1,6 @@
 .link-btn {
+    transition: transform .2s;
+
     &:link,
     &:visited {
         color: $color-text-dark;
