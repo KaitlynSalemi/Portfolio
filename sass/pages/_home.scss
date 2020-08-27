@@ -1,9 +1,22 @@
 .section-projects {
-    background-color: $color-white;
+    display: flex;
+
+    &__heading {
+        justify-self: center;
+        margin: 7rem 0;
+    }
+
+    &__block {
+        background-color: $color-primary;
+    }
+
+    &__cards {
+        background-color: peachpuff;
+    }
 }
 
 .section-resume {
-    background-color: $color-primary;
+    // background-color: $color-primary;
 }
 
 .section-contact {

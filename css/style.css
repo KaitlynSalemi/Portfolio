@@ -53,8 +53,11 @@ body {
     width: 0;
     margin-top: calc((1 - 1.6) * 0.5em); }
 
-.heading-3 {
+.font-medium {
   font-size: 2.4rem; }
+
+.font-small {
+  font-size: 1.6rem; }
 
 .link-btn:link, .link-btn:visited {
   color: #4e4e4e;
@@ -75,7 +78,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh 250vh 20vh; }
+  grid-template-rows: 100vh min-content 20vh; }
 
 .header {
   grid-row: 1 / 2;
@@ -91,8 +94,8 @@ body {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 20.85rem 20.85rem 1fr;
-    grid-template-columns: 1fr 17.75rem 17.75rem 1fr; }
+    grid-template-rows: 1fr repeat(2, 20.85rem) 1fr;
+    grid-template-columns: 1fr repeat(2, 17.75rem) 1fr; }
     .header .introduction__block {
       grid-row: 1 / -1;
       grid-column: 1 / span 2; }
@@ -108,9 +111,32 @@ body {
     grid-row: 3 / 4;
     grid-column: 1 / -1; }
 
-.main {
+.main-container {
   grid-row: 2 / 3;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-rows: 175vh 75vh 85vh; }
+  .main-container .section-projects {
+    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: min-content 11.1rem 144.6rem 11.1rem;
+    grid-template-columns: 1fr repeat(2, 20.5rem) 59.3rem repeat(2, 20.5rem) 1fr; }
+    .main-container .section-projects__heading {
+      grid-row: 1 / span 1;
+      grid-column: 4 / span 1; }
+    .main-container .section-projects__block {
+      grid-row: 2 / span 3;
+      grid-column: 2 / span 2; }
+    .main-container .section-projects__cards {
+      grid-row: 3 / span 1;
+      grid-column: 3 / span 3; }
+  .main-container .section-resume {
+    grid-row: 2 / span 1;
+    grid-column: 1 / -1; }
+  .main-container .section-contact {
+    grid-row: 3 / span 1;
+    grid-column: 1 / -1; }
 
 .footer {
   grid-row: 3  / 4;
@@ -171,10 +197,14 @@ body {
         transform: translateY(0); }
 
 .section-projects {
-  background-color: #fff; }
-
-.section-resume {
-  background-color: #e4eded; }
+  display: flex; }
+  .section-projects__heading {
+    justify-self: center;
+    margin: 7rem 0; }
+  .section-projects__block {
+    background-color: #e4eded; }
+  .section-projects__cards {
+    background-color: peachpuff; }
 
 .section-contact {
   background-color: #fff; }
