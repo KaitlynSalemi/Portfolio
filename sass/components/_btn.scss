@@ -1,0 +1,14 @@
+.btn {
+    background-color: $color-primary;
+
+    &:link,
+    &:visited {
+        color: $color-text-dark;
+        text-decoration: none;
+        padding: .1rem;
+    }
+
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+}
