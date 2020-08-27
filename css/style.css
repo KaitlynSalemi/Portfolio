@@ -84,12 +84,6 @@ body {
 .link-btn:active {
   transform: translateY(0); }
 
-.svg-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8rem 0; }
-
 .footer {
   background-color: #4e4e4e; }
 
@@ -124,7 +118,7 @@ body {
       grid-column: 4 / span 1;
       display: grid;
       grid-template-rows: repeat(3, max-content); }
-  .header .svg-container {
+  .header .down-arrow-container {
     grid-row: 3 / 4;
     grid-column: 1 / -1; }
 
@@ -162,7 +156,22 @@ body {
           grid-column: 2 / span 1; }
   .main-container .section-resume {
     grid-row: 2 / span 1;
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: repeat(2, min-content) 6.8rem 33.7rem 6.8rem;
+    grid-template-columns: 1fr 100.3rem 1fr; }
+    .main-container .section-resume__heading {
+      grid-row: 1 / span 1;
+      grid-column: 2 / span 1; }
+    .main-container .section-resume__download {
+      grid-row: 2 / span 1;
+      grid-column: 2 / span 1; }
+    .main-container .section-resume__block {
+      grid-row: 3 / span 3;
+      grid-column: 1 / -1; }
+    .main-container .section-resume__cards {
+      grid-row: 4 / span 1;
+      grid-column: 2 / span 1; }
   .main-container .section-contact {
     grid-row: 3 / span 1;
     grid-column: 1 / -1; }
@@ -192,11 +201,16 @@ body {
     margin-bottom: 2.7rem;
     width: 45rem; }
 
-.down-arrow {
-  fill: #989898;
-  width: 6rem;
-  height: 6rem;
-  animation: bounce 2s infinite; }
+.down-arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0; }
+  .down-arrow-container .down-arrow {
+    fill: #989898;
+    width: 6rem;
+    height: 6rem;
+    animation: bounce 2s infinite; }
 
 .navigation {
   display: flex;
@@ -249,8 +263,37 @@ body {
       .section-projects__cards .project-card__description__btn {
         text-align: center; }
 
-.section-resume {
-  background-color: plum; }
+.section-resume__heading {
+  justify-self: center;
+  margin-bottom: 3rem; }
+
+.section-resume__download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem; }
+  .section-resume__download:link, .section-resume__download:visited {
+    color: #4e4e4e;
+    text-decoration: none;
+    padding: .1rem; }
+  .section-resume__download:hover {
+    color: #989898;
+    transform: translateY(-2px); }
+  .section-resume__download:active {
+    transform: translateY(0); }
+  .section-resume__download .download-svg-container {
+    padding-top: .2rem;
+    padding-left: .5rem; }
+  .section-resume__download .download-svg {
+    fill: #4e4e4e;
+    width: 1.5rem;
+    height: 1.5rem; }
+
+.section-resume__block {
+  background-color: #e4eded; }
+
+.section-resume__cards {
+  background-color: aquamarine; }
 
 .section-contact {
   background-color: #fff; }

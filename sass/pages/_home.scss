@@ -52,7 +52,53 @@
 }
 
 .section-resume {
-    background-color: plum;
+
+    &__heading {
+        justify-self: center;
+        margin-bottom: 3rem;
+    }
+
+    &__download {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6rem;
+
+        &:link,
+        &:visited {
+            color: $color-text-dark;
+            text-decoration: none;
+            padding: .1rem;
+        }
+
+        &:hover {
+            color: $color-text-light;
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+
+        .download-svg-container {
+            padding-top: .2rem;
+            padding-left: .5rem;
+        }
+
+        .download-svg {
+            fill: $color-text-dark;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    &__block {
+        background-color: $color-primary;
+    }
+
+    &__cards {
+        background-color: aquamarine;
+    }
 }
 
 .section-contact {
