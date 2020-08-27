@@ -78,6 +78,14 @@
         &__cards {
             grid-row: 3 / span 1;
             grid-column: 3 / span 3;
+
+            display: grid;
+            grid-template-rows: repeat(3, 41.7rem);
+            grid-row-gap: 9.75rem;
+
+            project-card {
+                
+            }
         }
     }
 

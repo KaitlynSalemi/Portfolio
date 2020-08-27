@@ -12,11 +12,15 @@
 
     &__cards {
         background-color: peachpuff;
+
+        .project-card {
+            background-color: white;
+        }
     }
 }
 
 .section-resume {
-    // background-color: $color-primary;
+    background-color: plum;
 }
 
 .section-contact {
