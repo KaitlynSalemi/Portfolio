@@ -29,19 +29,9 @@
     }
 }
 
-.svg-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // padding-top: 3rem;
-    // padding-bottom: 13rem;
-    padding: 8rem 0;
-
-    .down-arrow {
-        fill: $color-text-light;
-        width: 6rem;
-        height: 6rem;
-        animation: bounce 2s infinite;
-    }
+.down-arrow {
+    fill: $color-text-light;
+    width: 6rem;
+    height: 6rem;
+    animation: bounce 2s infinite;
 }
-

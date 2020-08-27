@@ -55,7 +55,7 @@
     grid-column: 1 / -1;
 
     display: grid;
-    grid-template-rows: 175vh 75vh 85vh;
+    grid-template-rows: 190vh max-content 85vh;
 
     .section-projects {
         grid-row: 1 / span 1;
@@ -95,9 +95,6 @@
                 &__description {
                     grid-row: 1 / -1;
                     grid-column: 2 / span 1;
-
-                    // display: grid;
-                    // grid-template-rows: repeat(4, max-content);
                 }
             }
         }
