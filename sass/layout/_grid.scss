@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: 100vh min-content 20vh;
+    grid-template-rows: 100vh min-content 15vh;
 }
 
 .header {
@@ -55,7 +55,7 @@
     grid-column: 1 / -1;
 
     display: grid;
-    grid-template-rows: 190vh 75vh 85vh;
+    grid-template-rows: 190vh 75vh 70vh;
 
     .section-projects {
         grid-row: 1 / span 1;
@@ -142,6 +142,52 @@
     .section-contact {
         grid-row: 3 / span 1;
         grid-column: 1 / -1;
+
+        display: grid;
+        grid-template-rows: min-content 33.9rem min-content;
+        grid-template-columns: 1fr 100.3rem 1fr;
+        grid-row-gap: 10rem;
+
+        &__heading {
+            grid-row: 1 / span 1;
+            grid-column: 2 / span 1;
+        }
+
+        &__form {
+            grid-row: 2 / span 1;
+            grid-column: 2 / span 1;
+
+            display: grid;
+            grid-template-rows: 7.1rem 15.4rem min-content;
+            grid-template-columns: repeat(2, 47.2rem);
+            grid-row-gap: 4.6rem;
+            grid-column-gap: 5.9rem;
+
+            &__name {
+                grid-row: 1 / span 1;
+                grid-column: 1 / span 1;
+            }
+
+            &__email {
+                grid-row: 1 / span 1;
+                grid-column: 2 / span 1;
+            }
+
+            &__message {
+                grid-row: 2 / span 1;
+                grid-column: 1 / span 2;
+            }
+
+            &__btn {
+                grid-row: 3 / span 1;
+                grid-column: 1 / span 1;
+            }
+        }
+
+        &__fun-fact {
+            grid-row: 3 / span 1;
+            grid-column: 2 / span 1;
+        }
     }
 }
 
