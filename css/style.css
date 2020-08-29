@@ -328,7 +328,8 @@ body {
       .section-projects__cards .project-card__description__heading {
         margin-bottom: 1.5rem; }
       .section-projects__cards .project-card__description__paragraph {
-        margin-bottom: 3rem; }
+        margin-bottom: 3rem;
+        letter-spacing: .1rem; }
       .section-projects__cards .project-card__description__link {
         align-self: start;
         margin-bottom: 2.5rem; }
