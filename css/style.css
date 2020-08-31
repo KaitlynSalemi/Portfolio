@@ -231,6 +231,9 @@ body {
       .main-container .section-contact__form__btn {
         grid-row: 3 / span 1;
         grid-column: 1 / span 1; }
+      .main-container .section-contact__form__sent {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 2; }
     .main-container .section-contact__fun-fact {
       grid-row: 3 / span 1;
       grid-column: 2 / span 1; }
@@ -435,6 +438,12 @@ body {
     transform: translateY(-2px); }
   .section-contact__form__btn:active {
     transform: translateY(0); }
+
+.section-contact__form__sent {
+  padding-left: 15rem;
+  align-self: center;
+  color: #70cec8;
+  display: none; }
 
 .section-contact__fun-fact {
   display: flex;
