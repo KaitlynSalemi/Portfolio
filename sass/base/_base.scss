@@ -18,6 +18,14 @@ html {
     @media only screen and (max-width: $bp-1700) {
         font-size: 58%;
     }
+
+    @media only screen and (max-width: $bp-1600) {
+        font-size: 52%;
+    }
+
+    @media only screen and (max-width: $bp-1500) {
+        font-size: 50%;
+    }
 }
 
 body {

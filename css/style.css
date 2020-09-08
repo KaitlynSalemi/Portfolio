@@ -31,6 +31,12 @@ html {
   @media only screen and (max-width: 106.25em) {
     html {
       font-size: 58%; } }
+  @media only screen and (max-width: 100em) {
+    html {
+      font-size: 52%; } }
+  @media only screen and (max-width: 93.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "open sans", sans-serif;
