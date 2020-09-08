@@ -10,6 +10,14 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% 1rem = 10px
     scroll-behavior: smooth;
+
+    @media only screen and (max-width: $bp-1800) {
+        font-size: 60%;
+    }
+
+    @media only screen and (max-width: $bp-1700) {
+        font-size: 58%;
+    }
 }
 
 body {

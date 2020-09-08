@@ -25,6 +25,12 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media only screen and (max-width: 112.5em) {
+    html {
+      font-size: 60%; } }
+  @media only screen and (max-width: 106.25em) {
+    html {
+      font-size: 58%; } }
 
 body {
   font-family: "open sans", sans-serif;
@@ -123,13 +129,15 @@ body {
   grid-row-gap: 1.5rem; }
   .header .navigation {
     grid-row: 1 / 2;
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: max-content min-content; }
   .header .introduction {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 1fr repeat(2, 20.85rem) 1fr;
-    grid-template-columns: 1fr repeat(2, 17.75rem) 1fr; }
+    grid-template-rows: 11.6rem repeat(2, 20.85rem) 11.6rem;
+    grid-template-columns: 43.65rem repeat(2, 17.75rem) 43.65rem; }
     .header .introduction__block {
       grid-row: 1 / -1;
       grid-column: 1 / span 2; }
@@ -149,7 +157,7 @@ body {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   display: grid;
-  grid-template-rows: 190vh 75vh 70vh; }
+  grid-row-gap: 20rem; }
   .main-container .section-projects {
     grid-row: 1 / span 1;
     grid-column: 1 / -1;
@@ -255,26 +263,26 @@ body {
     grid-row: 2  / span 1;
     grid-column: 2 / span 1; }
 
-.introduction__block {
-  background-color: #e4eded;
-  content: "";
-  background-size: cover;
-  display: block;
-  height: 100%;
-  width: 100%; }
-
-.introduction__img {
-  width: 100%; }
-
-.introduction__text {
-  display: flex;
-  justify-items: start;
-  padding-left: 3rem; }
-  .introduction__text__heading {
-    margin-bottom: 1.5rem; }
-  .introduction__text__paragraph {
-    margin-bottom: 2.7rem;
-    width: 45rem; }
+.introduction {
+  align-content: center; }
+  .introduction__block {
+    background-color: #e4eded;
+    content: "";
+    background-size: cover;
+    display: block;
+    height: 100%;
+    width: 100%; }
+  .introduction__img {
+    width: 100%; }
+  .introduction__text {
+    display: flex;
+    justify-items: start;
+    padding-left: 3rem; }
+    .introduction__text__heading {
+      margin-bottom: 1.5rem; }
+    .introduction__text__paragraph {
+      margin-bottom: 2.7rem;
+      width: 45rem; }
 
 .down-arrow-container {
   display: flex;
@@ -448,7 +456,8 @@ body {
 .section-contact__fun-fact {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 15rem; }
   .section-contact__fun-fact__heading {
     font-family: span;
     padding: 0 .3rem .2rem .3rem;
