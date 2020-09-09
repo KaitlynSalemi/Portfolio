@@ -42,13 +42,16 @@ html {
       font-size: 46%; } }
   @media only screen and (max-width: 81.25em) {
     html {
-      font-size: 42%; } }
+      font-size: 40%; } }
   @media only screen and (max-width: 75em) {
     html {
-      font-size: 40%; } }
+      font-size: 38%; } }
   @media only screen and (max-width: 68.75em) {
     html {
-      font-size: 38%; } }
+      font-size: 36%; } }
+  @media only screen and (max-width: 65.62em) {
+    html {
+      font-size: 62.5%; } }
 
 body {
   font-family: "open sans", sans-serif;
@@ -111,7 +114,8 @@ body {
 
 .footer {
   background-color: #4e4e4e;
-  align-content: center; }
+  align-content: center;
+  padding: 5rem 0; }
   .footer__icons {
     display: flex;
     align-items: center;
@@ -136,20 +140,44 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh min-content 15vh; }
+  grid-template-rows: 100vh repeat(2, min-content); }
+  @media only screen and (max-width: 68.75em) {
+    .container {
+      grid-template-rows: repeat(3, min-content); } }
+  @media only screen and (max-width: 65.62em) {
+    .container {
+      grid-template-rows: 100vh repeat(2, min-content);
+      grid-row-gap: 10rem; } }
 
 .header {
   grid-row: 1 / 2;
   grid-column: 1 / -1;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
   grid-template-columns: minmax(6rem, 1fr) minmax(min-content, 65vw) minmax(6rem, 1fr);
   grid-row-gap: 1.5rem; }
+  @media only screen and (max-width: 68.75em) {
+    .header {
+      grid-row-gap: 10rem; } }
+  @media only screen and (max-width: 65.62em) {
+    .header {
+      grid-row-gap: 10rem;
+      grid-template-rows: repeat(3, min-content); } }
   .header .navigation {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: max-content min-content; }
+    @media only screen and (max-width: 65.62em) {
+      .header .navigation {
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: repeat(2, max-content);
+        grid-row-gap: 10rem; }
+        .header .navigation__heading {
+          grid-row: 2 / span 1;
+          grid-column: 2 / span 1; }
+        .header .navigation__list {
+          grid-row: 1 / span 1;
+          grid-column: 2 / span 1; } }
   .header .introduction {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -167,6 +195,19 @@ body {
       grid-column: 4 / span 1;
       display: grid;
       grid-template-rows: repeat(3, max-content); }
+    @media only screen and (max-width: 65.62em) {
+      .header .introduction {
+        grid-template-rows: 8rem 37rem 8rem max-content;
+        grid-template-columns: 1fr 8rem 30rem 8rem 1fr; }
+        .header .introduction__block {
+          grid-row: 1 / span 2;
+          grid-column: 2 / span 2; }
+        .header .introduction__img {
+          grid-row: 2 / span 2;
+          grid-column: 3 / span 2; }
+        .header .introduction__text {
+          grid-row: 4 / span 1;
+          grid-column: 2 / span 3; } }
   .header .down-arrow-container {
     grid-row: 3 / 4;
     grid-column: 1 / -1; }
@@ -296,17 +337,24 @@ body {
     display: flex;
     justify-items: start;
     padding-left: 3rem; }
+    @media only screen and (max-width: 65.62em) {
+      .introduction__text {
+        padding-left: 0;
+        justify-items: center;
+        margin-top: 10rem; } }
     .introduction__text__heading {
       margin-bottom: 1.5rem; }
     .introduction__text__paragraph {
       margin-bottom: 2.7rem;
       width: 45rem; }
+      @media only screen and (max-width: 65.62em) {
+        .introduction__text__paragraph {
+          text-align: center; } }
 
 .down-arrow-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 8rem 0; }
+  justify-content: center; }
   .down-arrow-container .down-arrow {
     fill: #989898;
     width: 6rem;
@@ -317,10 +365,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 10rem; }
+  padding: 0 10rem; }
+  @media only screen and (max-width: 68.75em) {
+    .navigation {
+      margin-top: 10rem; } }
+  @media only screen and (max-width: 65.62em) {
+    .navigation {
+      margin-top: 3rem; } }
   .navigation__list {
     display: flex;
     list-style: none; }
+    @media only screen and (max-width: 65.62em) {
+      .navigation__list {
+        margin: 0 auto; } }
     .navigation__list-item__link {
       display: block; }
       .navigation__list-item__link:link, .navigation__list-item__link:visited {

@@ -32,15 +32,19 @@ html {
     }
 
     @media only screen and (max-width: $bp-1300) {
-        font-size: 42%;
-    }
-
-    @media only screen and (max-width: $bp-1200) {
         font-size: 40%;
     }
 
-    @media only screen and (max-width: $bp-1100) {
+    @media only screen and (max-width: $bp-1200) {
         font-size: 38%;
+    }
+
+    @media only screen and (max-width: $bp-1100) {
+        font-size: 36%;
+    }
+
+    @media only screen and (max-width: $bp-1050) {
+        font-size: 62.5%;
     }
 }
 

@@ -2,11 +2,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 10rem;
+    padding: 0 10rem;
+
+    @media only screen and (max-width: $bp-1100) {
+        margin-top: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-1050) {
+        margin-top: 3rem;
+    }
 
     &__list {
         display: flex;
         list-style: none;
+
+        @media only screen and (max-width: $bp-1050) {
+            margin: 0 auto;
+        }
 
         &-item {
 
