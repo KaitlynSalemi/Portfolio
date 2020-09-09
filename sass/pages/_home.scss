@@ -46,6 +46,23 @@
                 &__btn {
                     text-align: center;
                 }
+
+                @media only screen and (max-width: $bp-1050) {
+                    padding: 3rem 5rem;
+                    padding-bottom: 4rem;
+                    
+                    &__paragraph {
+                        text-align: center;
+                    }
+    
+                    &__link {
+                        margin-bottom: 0;
+                    }
+    
+                    &__btn {
+                        padding: 0 4.5rem;
+                    }
+                }
             }
         }
     }
