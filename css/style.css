@@ -240,7 +240,8 @@ body {
       grid-row-gap: 9.75rem; }
       @media only screen and (max-width: 65.62em) {
         .main-container .section-projects__cards {
-          grid-template-rows: repeat(3, min-content); } }
+          grid-template-rows: repeat(3, min-content);
+          grid-template-columns: min-content; } }
       .main-container .section-projects__cards .project-card {
         display: grid;
         grid-template-columns: 62.5rem 1fr; }
@@ -252,7 +253,7 @@ body {
           grid-column: 2 / span 1; }
         @media only screen and (max-width: 65.62em) {
           .main-container .section-projects__cards .project-card {
-            grid-template-columns: 60rem;
+            grid-template-columns: 48.6rem;
             grid-template-rows: 30rem min-content; }
             .main-container .section-projects__cards .project-card__img {
               grid-row: 1 / span 1;
@@ -279,8 +280,8 @@ body {
     grid-row: 2 / span 1;
     grid-column: 1 / -1;
     display: grid;
-    grid-template-rows: repeat(2, min-content) 6.8rem 33.7rem 6.8rem;
-    grid-template-columns: 1fr 100.3rem 1fr; }
+    grid-template-rows: repeat(2, min-content) 6.8rem min-content 6.8rem;
+    grid-template-columns: 1fr min-content 1fr; }
     .main-container .section-resume__heading {
       grid-row: 1 / span 1;
       grid-column: 2 / span 1; }
@@ -299,6 +300,12 @@ body {
       .main-container .section-resume__cards .resume-card {
         display: grid;
         grid-template-rows: 8.8rem repeat(2, min-content); }
+      @media only screen and (max-width: 65.62em) {
+        .main-container .section-resume__cards {
+          grid-template-rows: repeat(2, 33.7rem);
+          grid-template-columns: repeat(2, 19.3rem);
+          grid-row-gap: 5rem;
+          grid-column-gap: 10rem; } }
   .main-container .section-contact {
     grid-row: 3 / span 1;
     grid-column: 1 / -1;
