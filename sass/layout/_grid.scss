@@ -7,7 +7,7 @@
     }
 
     @media only screen and (max-width: $bp-1050) {
-        grid-template-rows: 100vh repeat(2, min-content);
+        // grid-template-rows: 100vh repeat(2, min-content);
         // grid-row-gap: 10rem;
     }
 }

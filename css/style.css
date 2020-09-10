@@ -52,6 +52,30 @@ html {
   @media only screen and (max-width: 65.62em) {
     html {
       font-size: 55%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 48.43em) {
+    html {
+      font-size: 42%; } }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 34%; } }
+  @media only screen and (max-width: 29.68em) {
+    html {
+      font-size: 30%; } }
+  @media only screen and (max-width: 26.25em) {
+    html {
+      font-size: 28%; } }
+  @media only screen and (max-width: 23.75em) {
+    html {
+      font-size: 26%; } }
+  @media only screen and (max-width: 21.87em) {
+    html {
+      font-size: 24%; } }
+  @media only screen and (max-width: 20.31em) {
+    html {
+      font-size: 22%; } }
 
 body {
   font-family: "open sans", sans-serif;
@@ -144,9 +168,6 @@ body {
   @media only screen and (max-width: 68.75em) {
     .container {
       grid-template-rows: repeat(3, min-content); } }
-  @media only screen and (max-width: 65.62em) {
-    .container {
-      grid-template-rows: 100vh repeat(2, min-content); } }
 
 .header {
   grid-row: 1 / 2;

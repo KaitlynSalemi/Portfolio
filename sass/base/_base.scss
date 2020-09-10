@@ -46,6 +46,38 @@ html {
     @media only screen and (max-width: $bp-1050) {
         font-size: 55%;
     }
+
+    @media only screen and (max-width: $bp-900) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-775) {
+        font-size: 42%;
+    }
+
+    @media only screen and (max-width: $bp-500) {
+        font-size: 34%;
+    }
+
+    @media only screen and (max-width: $bp-475) {
+        font-size: 30%;
+    }
+
+    @media only screen and (max-width: $bp-420) {
+        font-size: 28%;
+    }
+
+    @media only screen and (max-width: $bp-380) {
+        font-size: 26%;
+    }
+
+    @media only screen and (max-width: $bp-350) {
+        font-size: 24%;
+    }
+
+    @media only screen and (max-width: $bp-325) {
+        font-size: 22%;
+    }
 }
 
 body {
