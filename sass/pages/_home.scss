@@ -227,7 +227,12 @@
             padding-left: 15rem;
             align-self: center;
             color: $color-accent;
-            display: none;
+            // display: none;
+
+            @media only screen and (max-width: $bp-1050) {
+                padding-left: 0;
+                text-align: end;
+            }
         }
     }
 
@@ -256,6 +261,16 @@
             &:hover {
                 color: $color-accent-dark;
             }
+        }
+
+        @media only screen and (max-width: $bp-1050) {
+            text-align: center;
+
+            &__heading {
+                margin: 0 auto;
+                margin-bottom: 2rem;
+            }
+            
         }
     }
 }
