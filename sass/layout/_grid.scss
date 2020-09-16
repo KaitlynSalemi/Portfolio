@@ -138,7 +138,7 @@
             grid-template-columns: 1fr repeat(2, 15rem) min-content repeat(2, 15rem) 1fr;
         }
 
-        @media only screen and (max-width: $bp-325) {
+        @media only screen and (max-width: $bp-500) {
             grid-template-columns: 1fr 10rem 15rem min-content 15rem 10rem 1fr;
         }
 
@@ -218,7 +218,7 @@
                     }
                 }
 
-                @media only screen and (max-width: $bp-325) {
+                @media only screen and (max-width: $bp-500) {
                     grid-template-columns: 60rem;
                 }
 
@@ -273,7 +273,7 @@
                 grid-template-columns: repeat(2, 21rem);
             }
 
-            @media only screen and (max-width: $bp-325) {
+            @media only screen and (max-width: $bp-500) {
                 grid-template-columns: repeat(2, 23rem);
                 grid-template-rows: repeat(2, 37rem);
             }
@@ -403,7 +403,7 @@
         grid-row: 2  / span 1;
         grid-column: 2 / span 1;
 
-        @media only screen and (max-width: $bp-380) {
+        @media only screen and (max-width: $bp-500) {
             grid-column: 1 / -1;
         }
     }
