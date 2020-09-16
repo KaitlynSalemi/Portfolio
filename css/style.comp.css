@@ -1,6 +1,6 @@
 @font-face {
   font-family: chalista;
-  src: url(../../css/fonts/challista/challista.ttf); }
+  src: url(./fonts/challista.ttf); }
 
 @keyframes bounce {
   0% {
