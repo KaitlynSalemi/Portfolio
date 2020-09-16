@@ -12,23 +12,23 @@ html {
     scroll-behavior: smooth;
 
     @media only screen and (max-width: $bp-1800) {
-        font-size: 60%;
-    }
-
-    @media only screen and (max-width: $bp-1700) {
         font-size: 58%;
     }
 
-    @media only screen and (max-width: $bp-1600) {
-        font-size: 52%;
+    @media only screen and (max-width: $bp-1700) {
+        font-size: 54%;
     }
 
-    @media only screen and (max-width: $bp-1500) {
+    @media only screen and (max-width: $bp-1600) {
         font-size: 50%;
     }
 
-    @media only screen and (max-width: $bp-1400) {
+    @media only screen and (max-width: $bp-1500) {
         font-size: 46%;
+    }
+
+    @media only screen and (max-width: $bp-1400) {
+        font-size: 44%;
     }
 
     @media only screen and (max-width: $bp-1300) {
@@ -44,11 +44,11 @@ html {
     }
 
     @media only screen and (max-width: $bp-1050) {
-        font-size: 55%;
+        font-size: 34%;
     }
 
     @media only screen and (max-width: $bp-900) {
-        font-size: 50%;
+        font-size: 32%;
     }
 
     @media only screen and (max-width: $bp-775) {

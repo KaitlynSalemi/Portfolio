@@ -19,11 +19,11 @@
         justify-items: start;
         padding-left: 3rem;
 
-        @media only screen and (max-width: $bp-1050) {
-            padding-left: 0;
-            justify-items: center;
-            margin-top: 10rem;
-        }
+        // @media only screen and (max-width: $bp-1050) {
+        //     padding-left: 0;
+        //     justify-items: center;
+        //     margin-top: 10rem;
+        // }
 
         &__heading {
             margin-bottom: 1.5rem;
@@ -33,9 +33,9 @@
             margin-bottom: 2.7rem;
             width: 45rem;
 
-            @media only screen and (max-width: $bp-1050) {
-                text-align: center;
-            }
+            // @media only screen and (max-width: $bp-1050) {
+            //     text-align: center;
+            // }
         }
     }
 }
