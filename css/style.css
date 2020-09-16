@@ -259,6 +259,9 @@ body {
       .main-container .section-projects {
         grid-template-rows: min-content 11.1rem min-content 11.1rem;
         grid-template-columns: 1fr repeat(2, 15rem) min-content repeat(2, 15rem) 1fr; } }
+    @media only screen and (max-width: 20.31em) {
+      .main-container .section-projects {
+        grid-template-columns: 1fr 10rem 15rem min-content 15rem 10rem 1fr; } }
     .main-container .section-projects__heading {
       grid-row: 1 / span 1;
       grid-column: 4 / span 1; }
@@ -309,6 +312,9 @@ body {
               .main-container .section-projects__cards .project-card__description__btn {
                 grid-row: 3 / span 1;
                 grid-column: 2 / span 1; } }
+        @media only screen and (max-width: 20.31em) {
+          .main-container .section-projects__cards .project-card {
+            grid-template-columns: 60rem; } }
   .main-container .section-resume {
     grid-row: 2 / span 1;
     grid-column: 1 / -1;
@@ -342,6 +348,10 @@ body {
       @media only screen and (max-width: 48.43em) {
         .main-container .section-resume__cards {
           grid-template-columns: repeat(2, 21rem); } }
+      @media only screen and (max-width: 20.31em) {
+        .main-container .section-resume__cards {
+          grid-template-columns: repeat(2, 23rem);
+          grid-template-rows: repeat(2, 37rem); } }
   .main-container .section-contact {
     grid-row: 3 / span 1;
     grid-column: 1 / -1;
@@ -398,7 +408,7 @@ body {
           .main-container .section-contact__form__sent {
             grid-row: 4 / span 1;
             grid-column: 1 / -1; } }
-      @media only screen and (max-width: 23.75em) {
+      @media only screen and (max-width: 31.25em) {
         .main-container .section-contact__form {
           grid-template-columns: 78rem; } }
     .main-container .section-contact__fun-fact {
