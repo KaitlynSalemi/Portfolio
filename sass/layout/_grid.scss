@@ -7,8 +7,8 @@
     }
 
     @media only screen and (max-width: $bp-1050) {
-        // grid-template-rows: 100vh repeat(2, min-content);
-        // grid-row-gap: 10rem;
+        grid-template-rows: 100vh repeat(2, min-content);
+        // grid-template-rows: max-content repeat(2, min-content);
     }
 }
 
@@ -25,8 +25,8 @@
     }
 
     @media only screen and (max-width: $bp-1050) {
-        grid-row-gap: 10rem;
-        grid-template-rows: repeat(3, min-content);
+        grid-row-gap: 0;
+        grid-template-rows: repeat(3, 1fr);
     }
 
     .navigation {
