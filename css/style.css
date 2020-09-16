@@ -201,6 +201,9 @@ body {
         .header .navigation__list {
           grid-row: 1 / span 1;
           grid-column: 2 / span 1; } }
+    @media only screen and (max-width: 48.43em) {
+      .header .navigation {
+        grid-row-gap: 5rem; } }
   .header .introduction {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -333,6 +336,9 @@ body {
           grid-template-columns: repeat(2, 19.3rem);
           grid-row-gap: 5rem;
           grid-column-gap: 10rem; } }
+      @media only screen and (max-width: 48.43em) {
+        .main-container .section-resume__cards {
+          grid-template-columns: repeat(2, 21rem); } }
   .main-container .section-contact {
     grid-row: 3 / span 1;
     grid-column: 1 / -1;

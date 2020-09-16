@@ -51,6 +51,10 @@
                 grid-column: 2 / span 1;
             }
         }
+
+        @media only screen and (max-width: $bp-775) {
+            grid-row-gap: 5rem;
+        }
     }
 
     .introduction {
@@ -251,6 +255,10 @@
                 grid-template-columns: repeat(2, 19.3rem);
                 grid-row-gap: 5rem;
                 grid-column-gap: 10rem;
+            }
+
+            @media only screen and (max-width: $bp-775) {
+                grid-template-columns: repeat(2, 21rem);
             }
         }
     }
