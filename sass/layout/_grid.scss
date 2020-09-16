@@ -55,6 +55,10 @@
         @media only screen and (max-width: $bp-775) {
             grid-row-gap: 5rem;
         }
+
+        @media only screen and (max-width: $bp-380) {
+            grid-row-gap: 8rem;
+        }
     }
 
     .introduction {
@@ -346,6 +350,10 @@
                     grid-column: 1 / -1;
                 }
             }
+
+            @media only screen and (max-width: $bp-380) {
+                grid-template-columns: 78rem;
+            }
         }
 
         &__fun-fact {
@@ -381,5 +389,9 @@
     &__copyright {
         grid-row: 2  / span 1;
         grid-column: 2 / span 1;
+
+        @media only screen and (max-width: $bp-380) {
+            grid-column: 1 / -1;
+        }
     }
 }

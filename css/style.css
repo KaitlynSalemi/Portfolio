@@ -204,6 +204,9 @@ body {
     @media only screen and (max-width: 48.43em) {
       .header .navigation {
         grid-row-gap: 5rem; } }
+    @media only screen and (max-width: 23.75em) {
+      .header .navigation {
+        grid-row-gap: 8rem; } }
   .header .introduction {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -395,6 +398,9 @@ body {
           .main-container .section-contact__form__sent {
             grid-row: 4 / span 1;
             grid-column: 1 / -1; } }
+      @media only screen and (max-width: 23.75em) {
+        .main-container .section-contact__form {
+          grid-template-columns: 78rem; } }
     .main-container .section-contact__fun-fact {
       grid-row: 3 / span 1;
       grid-column: 2 / span 1; }
@@ -419,6 +425,9 @@ body {
   .footer__copyright {
     grid-row: 2  / span 1;
     grid-column: 2 / span 1; }
+    @media only screen and (max-width: 23.75em) {
+      .footer__copyright {
+        grid-column: 1 / -1; } }
 
 .introduction {
   align-content: center; }
