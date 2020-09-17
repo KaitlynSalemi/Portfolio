@@ -55,29 +55,41 @@ html {
     //     font-size: 44%;
     // }
 
+    @media only screen and (max-width: $bp-570) {
+        font-size: 42%;
+    }
+
+    @media only screen and (max-width: $bp-530) {
+        font-size: 38%;
+    }
+
     @media only screen and (max-width: $bp-500) {
         font-size: 34%;
     }
 
-    @media only screen and (max-width: $bp-475) {
+    // @media only screen and (max-width: $bp-475) {
+    //     font-size: 30%;
+    // }
+
+    @media only screen and (max-width: $bp-430) {
         font-size: 30%;
     }
 
-    @media only screen and (max-width: $bp-420) {
-        font-size: 28%;
-    }
+    // @media only screen and (max-width: $bp-420) {
+    //     font-size: 28%;
+    // }
 
-    @media only screen and (max-width: $bp-380) {
-        font-size: 26%;
-    }
+    // @media only screen and (max-width: $bp-380) {
+    //     font-size: 26%;
+    // }
 
-    @media only screen and (max-width: $bp-350) {
-        font-size: 24%;
-    }
+    // @media only screen and (max-width: $bp-350) {
+    //     font-size: 24%;
+    // }
 
-    @media only screen and (max-width: $bp-325) {
-        font-size: 22%;
-    }
+    // @media only screen and (max-width: $bp-325) {
+    //     font-size: 22%;
+    // }
 }
 
 body {

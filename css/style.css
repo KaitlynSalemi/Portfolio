@@ -55,24 +55,18 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 44%; } }
+  @media only screen and (max-width: 35.62em) {
+    html {
+      font-size: 42%; } }
+  @media only screen and (max-width: 33.12em) {
+    html {
+      font-size: 38%; } }
   @media only screen and (max-width: 31.25em) {
     html {
       font-size: 34%; } }
-  @media only screen and (max-width: 29.68em) {
+  @media only screen and (max-width: 26.87em) {
     html {
       font-size: 30%; } }
-  @media only screen and (max-width: 26.25em) {
-    html {
-      font-size: 28%; } }
-  @media only screen and (max-width: 23.75em) {
-    html {
-      font-size: 26%; } }
-  @media only screen and (max-width: 21.87em) {
-    html {
-      font-size: 24%; } }
-  @media only screen and (max-width: 20.31em) {
-    html {
-      font-size: 22%; } }
 
 body {
   font-family: "open sans", sans-serif;
@@ -255,6 +249,9 @@ body {
     @media only screen and (max-width: 40.62em) {
       .main-container .section-projects {
         grid-template-columns: 1fr 10rem 15rem min-content 15rem 10rem 1fr; } }
+    @media only screen and (max-width: 37.5em) {
+      .main-container .section-projects {
+        grid-template-columns: 1fr 9rem 15rem min-content 15rem 9rem 1fr; } }
     .main-container .section-projects__heading {
       grid-row: 1 / span 1;
       grid-column: 4 / span 1; }
