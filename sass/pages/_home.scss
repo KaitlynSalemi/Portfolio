@@ -11,6 +11,7 @@
     }
 
     &__cards {
+        justify-self: center;
 
         .project-card {
             background-color: white;
@@ -47,22 +48,22 @@
                     text-align: center;
                 }
 
-                // @media only screen and (max-width: $bp-1050) {
-                //     padding: 3rem 5rem;
-                //     padding-bottom: 4rem;
+                @media only screen and (max-width: $bp-900) {
+                    padding: 3rem 5rem;
+                    padding-bottom: 4rem;
                     
-                //     &__paragraph {
-                //         text-align: center;
-                //     }
+                    &__paragraph {
+                        text-align: center;
+                    }
     
-                //     &__link {
-                //         margin-bottom: 0;
-                //     }
+                    &__link {
+                        margin-bottom: 0;
+                    }
     
-                //     &__btn {
-                //         padding: 0 4.5rem;
-                //     }
-                // }
+                    &__btn {
+                        padding: 0 4.5rem;
+                    }
+                }
             }
         }
     }
@@ -174,7 +175,7 @@
         
         input,
         textarea {
-            padding: .5rem;
+            padding: 1rem;
             color: $color-text-dark;
             border: 1px solid $color-text-dark;
             font-family: $font-primary;
@@ -224,22 +225,22 @@
         }
 
         &__sent {
-            display: none;
+            // display: none;
             padding-left: 15rem;
             align-self: center;
             color: $color-accent;
 
-            // @media only screen and (max-width: $bp-1050) {
-            //     padding-left: 0;
-            //     text-align: end;
-            // }
+            @media only screen and (max-width: $bp-900) {
+                padding-left: 0;
+                text-align: end;
+            }
 
         }
     }
 
     &__fun-fact {
-        display: none;
-        // display: flex;
+        // display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 15rem;
@@ -265,14 +266,14 @@
             }
         }
 
-        // @media only screen and (max-width: $bp-1050) {
-        //     text-align: center;
+        @media only screen and (max-width: $bp-900) {
+            text-align: center;
 
-        //     &__heading {
-        //         margin: 0 auto;
-        //         margin-bottom: 2rem;
-        //     }
+            &__heading {
+                margin: 0 auto;
+                margin-bottom: 2rem;
+            }
             
-        // }
+        }
     }
 }
