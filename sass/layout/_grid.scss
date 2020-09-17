@@ -140,6 +140,10 @@
             grid-template-columns: 1fr repeat(2, 15rem) min-content repeat(2, 15rem) 1fr;
         }
 
+        @media only screen and (max-width: $bp-650) {
+            grid-template-columns: 1fr 10rem 15rem min-content 15rem 10rem 1fr;
+        }
+
         // @media only screen and (max-width: $bp-500) {
         //     grid-template-columns: 1fr 10rem 15rem min-content 15rem 10rem 1fr;
         // }

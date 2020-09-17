@@ -55,9 +55,6 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 44%; } }
-  @media only screen and (max-width: 48.43em) {
-    html {
-      font-size: 42%; } }
   @media only screen and (max-width: 31.25em) {
     html {
       font-size: 34%; } }
@@ -255,6 +252,9 @@ body {
       .main-container .section-projects {
         grid-template-rows: min-content 11.1rem min-content 11.1rem;
         grid-template-columns: 1fr repeat(2, 15rem) min-content repeat(2, 15rem) 1fr; } }
+    @media only screen and (max-width: 40.62em) {
+      .main-container .section-projects {
+        grid-template-columns: 1fr 10rem 15rem min-content 15rem 10rem 1fr; } }
     .main-container .section-projects__heading {
       grid-row: 1 / span 1;
       grid-column: 4 / span 1; }
@@ -446,7 +446,8 @@ body {
       width: 45rem; }
       @media only screen and (max-width: 56.25em) {
         .introduction__text__paragraph {
-          text-align: center; } }
+          text-align: center;
+          width: 42rem; } }
 
 .down-arrow-container {
   display: flex;
