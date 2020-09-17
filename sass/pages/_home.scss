@@ -8,6 +8,7 @@
 
     &__block {
         background-color: $color-primary;
+        overflow: hidden;
     }
 
     &__cards {
