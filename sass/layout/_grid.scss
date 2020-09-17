@@ -10,7 +10,7 @@
         grid-template-rows: 100vh repeat(2, min-content);
     }
     
-    @media only screen and (max-height: $bp-900) {
+    @media only screen and (max-height: $bp-1100) {
         grid-template-rows: repeat(3, min-content);
     }
 }
@@ -27,7 +27,7 @@
         grid-row-gap: 5rem;
     }
 
-    @media only screen and (max-height: $bp-900) {
+    @media only screen and (max-height: $bp-1100) {
         grid-row-gap: 5rem;
     }
 
