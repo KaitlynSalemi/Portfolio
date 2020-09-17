@@ -132,6 +132,10 @@
             grid-template-columns: 1fr repeat(2, 15rem) min-content repeat(2, 15rem) 1fr;
         }
 
+        @media only screen and (max-width: $bp-420) {
+            grid-template-columns: 1fr repeat(2, 10rem) min-content repeat(2, 10rem) 1fr;
+        }
+
         &__heading {
             grid-row: 1 / span 1;
             grid-column: 4 / span 1;
@@ -207,6 +211,10 @@
                         }
                     }
                 }
+
+                // @media only screen and (max-width: $bp-420) {
+                //     grid-template-columns: 45rem;
+                // }
             }
         }
     }
@@ -253,6 +261,10 @@
                 grid-row-gap: 5rem;
                 grid-column-gap: 10rem;
             }
+
+            // @media only screen and (max-width: $bp-420) {
+            //     grid-template-columns: repeat(2, 17.5rem);
+            // }
         }
     }
 
