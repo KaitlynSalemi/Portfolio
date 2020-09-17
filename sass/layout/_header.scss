@@ -1,5 +1,5 @@
 .introduction {
-    align-content: center;
+    justify-items: center;
 
     &__block {
         background-color: $color-primary;
@@ -22,6 +22,7 @@
         @media only screen and (max-width: $bp-900) {
             padding-left: 0;
             justify-items: center;
+            align-items: center;
             margin-top: 10rem;
         }
 
@@ -35,7 +36,7 @@
 
             @media only screen and (max-width: $bp-900) {
                 text-align: center;
-                width: 42rem;
+                width: 35rem;
             }
         }
     }
@@ -55,6 +56,12 @@
 
     @media only screen and (max-width: $bp-900) {
         margin-bottom: 5rem;
+
+        .down-arrow {
+            width: 4rem;
+            height: 4rem;
+        }
+
     }
 }
 

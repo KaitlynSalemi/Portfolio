@@ -54,19 +54,7 @@ html {
       font-size: 34%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 44%; } }
-  @media only screen and (max-width: 35.62em) {
-    html {
-      font-size: 42%; } }
-  @media only screen and (max-width: 33.12em) {
-    html {
-      font-size: 38%; } }
-  @media only screen and (max-width: 31.25em) {
-    html {
-      font-size: 34%; } }
-  @media only screen and (max-width: 26.87em) {
-    html {
-      font-size: 28%; } }
+      font-size: 62.5%; } }
 
 body {
   font-family: "open sans", sans-serif;
@@ -213,8 +201,8 @@ body {
       grid-template-rows: repeat(3, max-content); }
     @media only screen and (max-width: 56.25em) {
       .header .introduction {
-        grid-template-rows: 7rem 35rem 7rem max-content;
-        grid-template-columns: 7rem 28rem 7rem; }
+        grid-template-rows: 4rem 28rem 4rem max-content;
+        grid-template-columns: 4rem 23rem 4rem; }
         .header .introduction__block {
           grid-row: 1 / span 2;
           grid-column: 1 / span 2; }
@@ -246,12 +234,6 @@ body {
       .main-container .section-projects {
         grid-template-rows: min-content 11.1rem min-content 11.1rem;
         grid-template-columns: 1fr repeat(2, 15rem) min-content repeat(2, 15rem) 1fr; } }
-    @media only screen and (max-width: 40.62em) {
-      .main-container .section-projects {
-        grid-template-columns: 1fr 10rem 15rem min-content 15rem 10rem 1fr; } }
-    @media only screen and (max-width: 37.5em) {
-      .main-container .section-projects {
-        grid-template-columns: 1fr 9rem 15rem min-content 15rem 9rem 1fr; } }
     .main-container .section-projects__heading {
       grid-row: 1 / span 1;
       grid-column: 4 / span 1; }
@@ -279,7 +261,7 @@ body {
           grid-column: 2 / span 1; }
         @media only screen and (max-width: 56.25em) {
           .main-container .section-projects__cards .project-card {
-            grid-template-columns: 60rem;
+            grid-template-columns: 50rem;
             grid-template-rows: 30rem min-content; }
             .main-container .section-projects__cards .project-card__img {
               grid-row: 1 / span 1;
@@ -329,7 +311,7 @@ body {
       @media only screen and (max-width: 56.25em) {
         .main-container .section-resume__cards {
           grid-template-rows: repeat(2, 33.7rem);
-          grid-template-columns: repeat(2, 25rem);
+          grid-template-columns: repeat(2, 20rem);
           grid-row-gap: 5rem;
           grid-column-gap: 10rem; } }
   .main-container .section-contact {
@@ -411,13 +393,10 @@ body {
     grid-column-gap: 10rem; }
   .footer__copyright {
     grid-row: 2  / span 1;
-    grid-column: 2 / span 1; }
-    @media only screen and (max-width: 31.25em) {
-      .footer__copyright {
-        grid-column: 1 / -1; } }
+    grid-column: 1 / -1; }
 
 .introduction {
-  align-content: center; }
+  justify-items: center; }
   .introduction__block {
     background-color: #e4eded;
     content: "";
@@ -435,6 +414,7 @@ body {
       .introduction__text {
         padding-left: 0;
         justify-items: center;
+        align-items: center;
         margin-top: 10rem; } }
     .introduction__text__heading {
       margin-bottom: 1.5rem; }
@@ -444,7 +424,7 @@ body {
       @media only screen and (max-width: 56.25em) {
         .introduction__text__paragraph {
           text-align: center;
-          width: 42rem; } }
+          width: 35rem; } }
 
 .down-arrow-container {
   display: flex;
@@ -457,7 +437,10 @@ body {
     animation: bounce 2s infinite; }
   @media only screen and (max-width: 56.25em) {
     .down-arrow-container {
-      margin-bottom: 5rem; } }
+      margin-bottom: 5rem; }
+      .down-arrow-container .down-arrow {
+        width: 4rem;
+        height: 4rem; } }
 
 .navigation {
   display: flex;
@@ -644,6 +627,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10rem;
   margin-bottom: 15rem; }
   .section-contact__fun-fact__heading {
     font-family: span;

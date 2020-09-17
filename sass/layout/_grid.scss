@@ -54,10 +54,6 @@
             }
         }
 
-        // @media only screen and (max-width: $bp-775) {
-        //     grid-row-gap: 5rem;
-        // }
-
         // @media only screen and (max-width: $bp-380) {
         //     grid-row-gap: 8rem;
         // }
@@ -90,8 +86,8 @@
         }
 
         @media only screen and (max-width: $bp-900) {
-            grid-template-rows: 7rem 35rem 7rem max-content;
-            grid-template-columns: 7rem 28rem 7rem;
+            grid-template-rows: 4rem 28rem 4rem max-content;
+            grid-template-columns: 4rem 23rem 4rem;
             
             &__block {
                 grid-row: 1 / span 2;
@@ -140,13 +136,13 @@
             grid-template-columns: 1fr repeat(2, 15rem) min-content repeat(2, 15rem) 1fr;
         }
 
-        @media only screen and (max-width: $bp-650) {
-            grid-template-columns: 1fr 10rem 15rem min-content 15rem 10rem 1fr;
-        }
+        // @media only screen and (max-width: $bp-650) {
+        //     grid-template-columns: 1fr 10rem 15rem min-content 15rem 10rem 1fr;
+        // }
 
-        @media only screen and (max-width: $bp-600) {
-            grid-template-columns: 1fr 9rem 15rem min-content 15rem 9rem 1fr;
-        }
+        // @media only screen and (max-width: $bp-600) {
+        //     grid-template-columns: 1fr 9rem 15rem min-content 15rem 9rem 1fr;
+        // }
 
         // @media only screen and (max-width: $bp-500) {
         //     grid-template-columns: 1fr 10rem 15rem min-content 15rem 10rem 1fr;
@@ -190,7 +186,7 @@
                 }
 
                 @media only screen and (max-width: $bp-900) {
-                    grid-template-columns: 60rem;
+                    grid-template-columns: 50rem;
                     grid-template-rows: 30rem min-content;
 
                     &__img {
@@ -274,7 +270,7 @@
 
             @media only screen and (max-width: $bp-900) {
                 grid-template-rows: repeat(2, 33.7rem);
-                grid-template-columns: repeat(2, 25rem);
+                grid-template-columns: repeat(2, 20rem);
                 grid-row-gap: 5rem;
                 grid-column-gap: 10rem;
             }
@@ -411,10 +407,7 @@
 
     &__copyright {
         grid-row: 2  / span 1;
-        grid-column: 2 / span 1;
+        grid-column: 1 / -1;
 
-        @media only screen and (max-width: $bp-500) {
-            grid-column: 1 / -1;
-        }
     }
 }
