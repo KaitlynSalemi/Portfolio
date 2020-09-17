@@ -225,7 +225,7 @@
         }
 
         &__sent {
-            // display: none;
+            display: none;
             padding-left: 15rem;
             align-self: center;
             color: $color-accent;
@@ -239,8 +239,8 @@
     }
 
     &__fun-fact {
-        // display: none;
-        display: flex;
+        display: none;
+        // display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 15rem;

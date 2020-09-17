@@ -618,6 +618,7 @@ body {
     transform: translateY(0); }
 
 .section-contact__form__sent {
+  display: none;
   padding-left: 15rem;
   align-self: center;
   color: #70cec8; }
@@ -627,7 +628,7 @@ body {
       text-align: end; } }
 
 .section-contact__fun-fact {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   margin-bottom: 15rem; }
