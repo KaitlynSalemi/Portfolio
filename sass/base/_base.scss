@@ -55,6 +55,10 @@ html {
         font-size: 54%;
     }
 
+    @media only screen and (max-width: $bp-420) {
+        font-size: 32%;
+    }
+
 }
 
 body {

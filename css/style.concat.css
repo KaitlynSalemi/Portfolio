@@ -58,6 +58,9 @@ html {
   @media only screen and (max-width: 48.43em) {
     html {
       font-size: 54%; } }
+  @media only screen and (max-width: 26.25em) {
+    html {
+      font-size: 32%; } }
 
 body {
   font-family: "open sans", sans-serif;
@@ -453,8 +456,7 @@ body {
   margin-top: 5rem; }
   @media only screen and (max-width: 56.25em) {
     .navigation {
-      align-content: end;
-      margin-top: 0; } }
+      align-content: end; } }
   .navigation__list {
     display: flex;
     list-style: none; }
@@ -652,6 +654,7 @@ body {
       color: #56a09b; }
   @media only screen and (max-width: 56.25em) {
     .section-contact__fun-fact {
+      display: none !important;
       text-align: center;
       padding: 0 10rem; }
       .section-contact__fun-fact__heading {
