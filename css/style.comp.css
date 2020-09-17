@@ -60,7 +60,7 @@ html {
       font-size: 54%; } }
   @media only screen and (max-width: 26.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 52%; } }
 
 body {
   font-family: "open sans", sans-serif;
@@ -93,10 +93,11 @@ body {
 .heading-3,
 .font-medium {
   font-size: 2.4rem;
-  font-weight: 100; }
+  font-weight: 500; }
 
 .font-small {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  font-weight: 500; }
 
 .btn {
   background-color: #e4eded; }
