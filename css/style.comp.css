@@ -60,7 +60,7 @@ html {
       font-size: 54%; } }
   @media only screen and (max-width: 26.25em) {
     html {
-      font-size: 33%; } }
+      font-size: 50%; } }
 
 body {
   font-family: "open sans", sans-serif;
@@ -240,9 +240,6 @@ body {
       .main-container .section-projects {
         grid-template-rows: min-content 11.1rem min-content 11.1rem;
         grid-template-columns: 1fr repeat(2, 15rem) min-content repeat(2, 15rem) 1fr; } }
-    @media only screen and (max-width: 26.25em) {
-      .main-container .section-projects {
-        grid-template-columns: 1fr repeat(2, 10rem) min-content repeat(2, 10rem) 1fr; } }
     .main-container .section-projects__heading {
       grid-row: 1 / span 1;
       grid-column: 4 / span 1; }
@@ -485,7 +482,8 @@ body {
     justify-self: center;
     margin: 7rem 0; }
   .section-projects__block {
-    background-color: #e4eded; }
+    background-color: #e4eded;
+    overflow: hidden; }
   .section-projects__cards {
     justify-self: center; }
     .section-projects__cards .project-card {
