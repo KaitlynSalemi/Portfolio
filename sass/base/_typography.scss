@@ -19,9 +19,18 @@
 .font-medium {
     font-size: $font-size-medium;
     font-weight: 500;
+    
+    @media only screen and (max-width: $bp-420) {
+        font-weight: 600;
+    }
 }
 
 .font-small {
     font-size: $font-size-small;
     font-weight: 500;
+
+    @media only screen and (max-width: $bp-420) {
+        font-weight: 600;
+    }
 }
+
