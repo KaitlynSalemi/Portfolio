@@ -4,6 +4,10 @@
     font-weight: 100;
     line-height: 1;
     letter-spacing: 0;
+
+    @media only screen and (max-width: $bp-420) {
+        font-size: $font-size-xlarge-mobile;
+    }
 }
 
 .heading-2 {
@@ -13,6 +17,10 @@
     padding: 0 .3rem .2rem .3rem;
     background: linear-gradient(to top, $color-accent 35%, transparent 35%);
     font-weight: 500;
+
+    @media only screen and (max-width: $bp-420) {
+        font-size: $font-size-large-mobile;
+    }
 }
 
 .heading-3,
@@ -21,7 +29,8 @@
     font-weight: 500;
     
     @media only screen and (max-width: $bp-420) {
-        font-weight: 600;
+        // font-weight: 600;
+        font-size: $font-size-medium-mobile;
     }
 }
 
@@ -30,7 +39,8 @@
     font-weight: 500;
 
     @media only screen and (max-width: $bp-420) {
-        font-weight: 600;
+        // font-weight: 600;
+        font-size: $font-size-small-mobile;
     }
 }
 

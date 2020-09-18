@@ -60,7 +60,7 @@ html {
       font-size: 54%; } }
   @media only screen and (max-width: 26.25em) {
     html {
-      font-size: 52%; } }
+      font-size: 30%; } }
 
 body {
   font-family: "open sans", sans-serif;
@@ -76,6 +76,9 @@ body {
   font-weight: 100;
   line-height: 1;
   letter-spacing: 0; }
+  @media only screen and (max-width: 26.25em) {
+    .heading-1 {
+      font-size: 18rem; } }
 
 .heading-2 {
   font-family: span;
@@ -89,15 +92,25 @@ body {
     height: 0;
     width: 0;
     margin-top: calc((1 - 1.6) * 0.5em); }
+  @media only screen and (max-width: 26.25em) {
+    .heading-2 {
+      font-size: 8rem; } }
 
 .heading-3,
 .font-medium {
   font-size: 2.4rem;
   font-weight: 500; }
+  @media only screen and (max-width: 26.25em) {
+    .heading-3,
+    .font-medium {
+      font-size: 4rem; } }
 
 .font-small {
   font-size: 1.6rem;
   font-weight: 500; }
+  @media only screen and (max-width: 26.25em) {
+    .font-small {
+      font-size: 3rem; } }
 
 .btn {
   background-color: #e4eded; }
@@ -219,6 +232,18 @@ body {
         .header .introduction__text {
           grid-row: 4 / span 1;
           grid-column: 1 / span 3; } }
+    @media only screen and (max-width: 26.25em) {
+      .header .introduction {
+        grid-template-columns: 10rem 4rem 23rem 4rem 10rem; }
+        .header .introduction__block {
+          grid-row: 1 / span 2;
+          grid-column: 2 / span 2; }
+        .header .introduction__img {
+          grid-row: 2 / span 2;
+          grid-column: 3 / span 2; }
+        .header .introduction__text {
+          grid-row: 4 / span 1;
+          grid-column: 1 / -1; } }
   .header .down-arrow-container {
     grid-row: 3 / 4;
     grid-column: 1 / -1; }
@@ -291,6 +316,22 @@ body {
               .main-container .section-projects__cards .project-card__description__btn {
                 grid-row: 3 / span 1;
                 grid-column: 2 / span 1; } }
+        @media only screen and (max-width: 26.25em) {
+          .main-container .section-projects__cards .project-card {
+            grid-template-columns: 75rem;
+            grid-template-rows: 40rem min-content; } }
+    @media only screen and (max-width: 26.25em) {
+      .main-container .section-projects {
+        grid-template-columns: repeat(2, 1fr) min-content repeat(2, 1fr); }
+        .main-container .section-projects__heading {
+          grid-row: 1 / span 1;
+          grid-column: 3 / span 1; }
+        .main-container .section-projects__block {
+          grid-row: 2 / span 3;
+          grid-column: 1 / span 2; }
+        .main-container .section-projects__cards {
+          grid-row: 3 / span 1;
+          grid-column: 2 / span 3; } }
   .main-container .section-resume {
     grid-row: 2 / span 1;
     grid-column: 1 / -1;
@@ -321,6 +362,10 @@ body {
           grid-template-columns: repeat(2, 20rem);
           grid-row-gap: 5rem;
           grid-column-gap: 10rem; } }
+      @media only screen and (max-width: 26.25em) {
+        .main-container .section-resume__cards {
+          grid-template-columns: repeat(2, 32.5rem);
+          grid-template-rows: repeat(2, 45rem); } }
   .main-container .section-contact {
     grid-row: 3 / span 1;
     grid-column: 1 / -1;
@@ -377,6 +422,11 @@ body {
           .main-container .section-contact__form__sent {
             grid-row: 4 / span 1;
             grid-column: 1 / -1; } }
+      @media only screen and (max-width: 26.25em) {
+        .main-container .section-contact__form {
+          grid-template-rows: repeat(2, 7.1rem) 21rem min-content;
+          grid-template-columns: 75rem;
+          grid-row-gap: 6rem; } }
     .main-container .section-contact__fun-fact {
       grid-row: 3 / span 1;
       grid-column: 2 / span 1; }
@@ -432,6 +482,9 @@ body {
         .introduction__text__paragraph {
           text-align: center;
           width: 35rem; } }
+      @media only screen and (max-width: 26.25em) {
+        .introduction__text__paragraph {
+          width: 100%; } }
 
 .down-arrow-container {
   display: flex;
@@ -458,6 +511,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .navigation {
       align-content: end; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation {
+      padding: 0; } }
   .navigation__list {
     display: flex;
     list-style: none; }
@@ -512,7 +568,7 @@ body {
           text-align: center; }
         @media only screen and (max-width: 56.25em) {
           .section-projects__cards .project-card__description {
-            padding: 3rem 5rem;
+            padding: 2rem 2.5rem;
             padding-bottom: 4rem; }
             .section-projects__cards .project-card__description__paragraph {
               text-align: center; }
@@ -520,6 +576,9 @@ body {
               margin-bottom: 0; }
             .section-projects__cards .project-card__description__btn {
               padding: 0 4.5rem; } }
+        @media only screen and (max-width: 26.25em) {
+          .section-projects__cards .project-card__description__paragraph {
+            padding: 1rem 0; } }
 
 .section-resume__heading {
   justify-self: center;
@@ -622,7 +681,6 @@ body {
     transform: translateY(0); }
 
 .section-contact__form__sent {
-  display: none;
   padding-left: 15rem;
   align-self: center;
   color: #70cec8; }
@@ -632,7 +690,7 @@ body {
       text-align: end; } }
 
 .section-contact__fun-fact {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 15rem; }
@@ -656,9 +714,11 @@ body {
       color: #56a09b; }
   @media only screen and (max-width: 56.25em) {
     .section-contact__fun-fact {
-      display: none !important;
       text-align: center;
       padding: 0 10rem; }
       .section-contact__fun-fact__heading {
         margin: 0 auto;
         margin-bottom: 2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-contact__fun-fact {
+      padding: 0; } }
