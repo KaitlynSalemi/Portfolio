@@ -1,7 +1,3 @@
-// .header {
-
-// }
-
 .introduction {
     justify-items: center;
 
@@ -69,15 +65,11 @@
     @media only screen and (max-width: $bp-900) {
         margin-bottom: 5rem;
 
-        .down-arrow {
-            width: 4rem;
-            height: 4rem;
-        }
-
     }
 
     @media only screen and (max-width: $bp-775) {
         margin-bottom: 3rem;
     }
+    
 }
 

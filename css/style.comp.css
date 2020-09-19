@@ -152,6 +152,10 @@ body {
         width: 3.5rem;
         height: 3.5rem;
         transition: transform .2s; }
+        @media only screen and (max-width: 26.25em) {
+          .footer__icons .icon-link__svg {
+            width: 5rem;
+            height: 5rem; } }
         .footer__icons .icon-link__svg:hover {
           fill: #56a09b;
           transform: translateY(-2px); }
@@ -160,6 +164,9 @@ body {
   .footer__copyright {
     color: #70cec8;
     text-align: center; }
+    @media only screen and (max-width: 26.25em) {
+      .footer__copyright {
+        margin-top: 3rem; } }
 
 .container {
   display: grid;
@@ -365,7 +372,7 @@ body {
       @media only screen and (max-width: 26.25em) {
         .main-container .section-resume__cards {
           grid-template-columns: repeat(2, 32.5rem);
-          grid-template-rows: repeat(2, 45rem); } }
+          grid-template-rows: repeat(2, 50rem); } }
   .main-container .section-contact {
     grid-row: 3 / span 1;
     grid-column: 1 / -1;
@@ -503,10 +510,7 @@ body {
     animation: bounce 2s infinite; }
   @media only screen and (max-width: 56.25em) {
     .down-arrow-container {
-      margin-bottom: 5rem; }
-      .down-arrow-container .down-arrow {
-        width: 4rem;
-        height: 4rem; } }
+      margin-bottom: 5rem; } }
   @media only screen and (max-width: 48.43em) {
     .down-arrow-container {
       margin-bottom: 3rem; } }
@@ -632,9 +636,16 @@ body {
     fill: #70cec8;
     width: 9rem;
     height: 9rem; }
+    @media only screen and (max-width: 26.25em) {
+      .section-resume__cards .resume-card__svg {
+        width: 14rem;
+        height: 14rem; } }
   .section-resume__cards .resume-card__heading {
     margin-top: 3rem;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 26.25em) {
+      .section-resume__cards .resume-card__heading {
+        margin-top: 8rem; } }
   .section-resume__cards .resume-card__list {
     list-style: none;
     text-align: center; }
@@ -684,6 +695,7 @@ body {
     transform: translateY(0); }
 
 .section-contact__form__sent {
+  display: none;
   padding-left: 15rem;
   align-self: center;
   color: #70cec8; }
@@ -693,7 +705,7 @@ body {
       text-align: end; } }
 
 .section-contact__fun-fact {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   margin-bottom: 15rem; }
@@ -717,11 +729,13 @@ body {
       color: #56a09b; }
   @media only screen and (max-width: 56.25em) {
     .section-contact__fun-fact {
+      display: none !important;
       text-align: center;
       padding: 0 10rem; }
       .section-contact__fun-fact__heading {
         margin: 0 auto;
         margin-bottom: 2rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 26.25em) {
     .section-contact__fun-fact {
+      display: none !important;
       padding: 0; } }

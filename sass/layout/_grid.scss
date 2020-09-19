@@ -69,23 +69,6 @@
         @media only screen and (max-width: $bp-775) {
             grid-row-gap: 5rem;
         }
-
-        // @media only screen and (max-width: $bp-420) {
-        //     grid-row: 1 / span 1;
-        //     grid-column: 1 / -1;
-
-        //     grid-template-columns: max-content;
-
-        //     &__heading {
-        //         grid-row: 2 / span 1;
-        //         grid-column: 1 / -1;
-        //     }
-
-        //     &__list {
-        //         grid-row: 1 / span 1;
-        //         grid-column: 1 / -1;
-        //     }
-        // }
     }
 
     .introduction {
@@ -135,9 +118,6 @@
         }
 
         @media only screen and (max-width: $bp-420) {
-            // grid-row: 3 / span 1;
-            // grid-column: 2 / 3;
-
             grid-template-columns: 10rem 4rem 23rem 4rem 10rem;
             
             &__block {
@@ -160,11 +140,6 @@
     .down-arrow-container {
         grid-row: 3 / 4;
         grid-column: 1 / -1;
-
-        // @media only screen and (max-width: $bp-420) {
-        //     grid-row: 5 / span 1;
-        //     grid-column: 1 / -1;
-        // }
     }
 }
 
@@ -274,25 +249,6 @@
                 }
             }
         }
-
-        // @media only screen and (max-width: $bp-420) {
-        //     grid-template-columns: repeat(2, 1fr) min-content repeat(2, 1fr);
-
-        //     &__heading {
-        //         grid-row: 1 / span 1;
-        //         grid-column: 3 / span 1;
-        //     }
-        
-        //     &__block {
-        //         grid-row: 2 / span 3;
-        //         grid-column: 1 / span 2;
-        //     }
-        
-        //     &__cards {
-        //         grid-row: 3 / span 1;
-        //         grid-column: 2 / span 3;
-        //     }
-        // }
     }
 
     .section-resume {
@@ -340,7 +296,7 @@
 
             @media only screen and (max-width: $bp-420) {
                 grid-template-columns: repeat(2, 32.5rem);
-                grid-template-rows: repeat(2, 45rem);
+                grid-template-rows: repeat(2, 50rem);
             }
         }
     }

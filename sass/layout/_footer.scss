@@ -19,6 +19,11 @@
                 height: 3.5rem;
                 transition: transform .2s;
 
+                @media only screen and (max-width: $bp-420) {
+                    width: 5rem;
+                    height: 5rem;
+                }
+
                 &:hover {
                     fill: $color-accent-dark;
                     transform: translateY(-2px);
@@ -34,6 +39,10 @@
     &__copyright {
         color: $color-accent;
         text-align: center;
+
+        @media only screen and (max-width: $bp-420) {
+            margin-top: 3rem;
+        }
     }
 
 }
