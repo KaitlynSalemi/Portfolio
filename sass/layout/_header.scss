@@ -1,6 +1,6 @@
-.header {
-    
-}
+// .header {
+
+// }
 
 .introduction {
     justify-items: center;
@@ -28,6 +28,10 @@
             justify-items: center;
             align-items: center;
             margin-top: 10rem;
+        }
+
+        @media only screen and (max-width: $bp-775) {
+            margin-top: 5rem;
         }
 
         &__heading {
@@ -70,6 +74,10 @@
             height: 4rem;
         }
 
+    }
+
+    @media only screen and (max-width: $bp-775) {
+        margin-bottom: 3rem;
     }
 }
 

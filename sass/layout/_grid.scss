@@ -14,8 +14,12 @@
         grid-template-rows: repeat(3, min-content);
     }
 
-    @media only screen and (max-width: $bp-420) {
+    @media only screen and (max-width: $bp-775) {
         grid-template-rows: 100vh repeat(2, min-content);
+    }
+
+    @media only screen and (max-width: $bp-420) {
+        grid-template-rows: repeat(3, min-content);
     }
 }
 
@@ -36,8 +40,7 @@
     }
 
     @media only screen and (max-width: $bp-420) {
-        grid-template-rows: min-content 1fr min-content 1fr min-content;
-        grid-row-gap: 0;
+        grid-row-gap: 8rem;
     }
 
     .navigation {
@@ -63,22 +66,26 @@
             }
         }
 
-        @media only screen and (max-width: $bp-420) {
-            grid-row: 1 / span 1;
-            grid-column: 1 / -1;
-
-            grid-template-columns: max-content;
-
-            &__heading {
-                grid-row: 2 / span 1;
-                grid-column: 1 / -1;
-            }
-
-            &__list {
-                grid-row: 1 / span 1;
-                grid-column: 1 / -1;
-            }
+        @media only screen and (max-width: $bp-775) {
+            grid-row-gap: 5rem;
         }
+
+        // @media only screen and (max-width: $bp-420) {
+        //     grid-row: 1 / span 1;
+        //     grid-column: 1 / -1;
+
+        //     grid-template-columns: max-content;
+
+        //     &__heading {
+        //         grid-row: 2 / span 1;
+        //         grid-column: 1 / -1;
+        //     }
+
+        //     &__list {
+        //         grid-row: 1 / span 1;
+        //         grid-column: 1 / -1;
+        //     }
+        // }
     }
 
     .introduction {
@@ -128,8 +135,8 @@
         }
 
         @media only screen and (max-width: $bp-420) {
-            grid-row: 3 / span 1;
-            grid-column: 2 / 3;
+            // grid-row: 3 / span 1;
+            // grid-column: 2 / 3;
 
             grid-template-columns: 10rem 4rem 23rem 4rem 10rem;
             
@@ -154,10 +161,10 @@
         grid-row: 3 / 4;
         grid-column: 1 / -1;
 
-        @media only screen and (max-width: $bp-420) {
-            grid-row: 5 / span 1;
-            grid-column: 1 / -1;
-        }
+        // @media only screen and (max-width: $bp-420) {
+        //     grid-row: 5 / span 1;
+        //     grid-column: 1 / -1;
+        // }
     }
 }
 
@@ -268,24 +275,24 @@
             }
         }
 
-        @media only screen and (max-width: $bp-420) {
-            grid-template-columns: repeat(2, 1fr) min-content repeat(2, 1fr);
+        // @media only screen and (max-width: $bp-420) {
+        //     grid-template-columns: repeat(2, 1fr) min-content repeat(2, 1fr);
 
-            &__heading {
-                grid-row: 1 / span 1;
-                grid-column: 3 / span 1;
-            }
+        //     &__heading {
+        //         grid-row: 1 / span 1;
+        //         grid-column: 3 / span 1;
+        //     }
         
-            &__block {
-                grid-row: 2 / span 3;
-                grid-column: 1 / span 2;
-            }
+        //     &__block {
+        //         grid-row: 2 / span 3;
+        //         grid-column: 1 / span 2;
+        //     }
         
-            &__cards {
-                grid-row: 3 / span 1;
-                grid-column: 2 / span 3;
-            }
-        }
+        //     &__cards {
+        //         grid-row: 3 / span 1;
+        //         grid-column: 2 / span 3;
+        //     }
+        // }
     }
 
     .section-resume {
@@ -426,6 +433,10 @@
                 grid-template-rows: repeat(2, 7.1rem) 23rem min-content;
                 grid-template-columns: 90rem;
                 grid-row-gap: 6rem;
+            }
+
+            @media only screen and (max-width: $bp-375) {
+                grid-row-gap: 7rem;
             }
         }
 
