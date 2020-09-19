@@ -183,7 +183,7 @@ body {
   @media only screen and (max-width: 48.43em) {
     .container {
       grid-template-rows: 100vh repeat(2, min-content); } }
-  @media only screen and (max-width: 26.25em) {
+  @media only screen and (max-width: 33.75em) {
     .container {
       grid-template-rows: repeat(3, min-content); } }
 
