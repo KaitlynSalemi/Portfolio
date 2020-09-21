@@ -695,7 +695,6 @@ body {
     transform: translateY(0); }
 
 .section-contact__form__sent {
-  display: none;
   padding-left: 15rem;
   align-self: center;
   color: #70cec8; }
