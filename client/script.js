@@ -32,5 +32,19 @@ function checkInputs() {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    const nameValue = name.value.trim();
+    const emailValue = email.value.trim();
+    const messageValue = message.value.trim();
+
+    const formData = {
+        nameValue,
+        emailValue,
+        messageValue
+    }
+
+    $.post('/email', formData, function() {
+        console.log('sent form data to server')
+    })
+
     checkInputs();
 });
