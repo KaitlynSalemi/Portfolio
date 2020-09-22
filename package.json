@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "This is my newest portfolio and personal website to show off all my projects.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -24,7 +24,10 @@
     "url": "https://github.com/KaitlynSalemi/portfolio/issues"
   },
   "homepage": "https://github.com/KaitlynSalemi/portfolio#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "concat": "^1.0.3",
