@@ -2,16 +2,16 @@ const express = require("express");
 const path = require('path');
 const sendMail = require('./mail');
 const app = express();
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// conection to the client folder
+// Conection to the client folder
 app.use(express.static(__dirname + '/client'));
 
-//Routes
+// Routes
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/client/index.html'));
 })
