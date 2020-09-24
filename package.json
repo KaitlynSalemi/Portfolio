@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/KaitlynSalemi/portfolio#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "nodemailer": "^6.4.11",
     "nodemailer-mailgun-transport": "^2.0.0",
