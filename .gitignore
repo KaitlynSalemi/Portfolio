@@ -103,5 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-# Mail Gun and nodemailer
+# Mail Gun and NodeMailer
 /mail.js

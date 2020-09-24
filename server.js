@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require('path');
+const sendMail = require('./mail');
 const app = express();
 const PORT = 8080
 
@@ -7,6 +8,7 @@ const PORT = 8080
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+// conection to the client folder
 app.use(express.static(__dirname + '/client'));
 
 //Routes
@@ -15,8 +17,16 @@ app.get('/', (req, res) => {
 })
 
 app.post('/email', (req, res) => {
+    const { name, email, message} = req.body;
     console.log('Form Data: ', req.body);
-    res.json('message data received!')
+
+    sendMail(name, email, message, function(err, data) {
+        if(err) {
+            res.status(500).json({ message: 'Internal Error' })
+        } else {
+            res.json({ message: 'Email sent!!'})
+        }
+    })
 })
 
 // Listening on the Port

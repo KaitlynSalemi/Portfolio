@@ -1,8 +1,8 @@
 // document.querySelector(".navigation__heading").innerHTML = "Java Script file is working.";
 const form = document.querySelector(".section-contact__form");
-const name = document.querySelector(".name-input");
-const email = document.querySelector(".email-input");
-const message = document.querySelector(".message-textarea");
+const nameInput = document.querySelector(".name-input");
+const emailInput = document.querySelector(".email-input");
+const messageInput = document.querySelector(".message-textarea");
 const sent = document.querySelector(".section-contact__form__sent");
 
 function sentMessage(message) {
@@ -11,16 +11,16 @@ function sentMessage(message) {
 }
 
 function checkInputs() {
-    const nameValue = name.value.trim();
-    const emailValue = email.value.trim();
-    const messageValue = message.value.trim();
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
 
-    if(nameValue === '') {
+    if(name === '') {
         //change sent message
         sentMessage("Name input cannot be blank.");
-    } else if(emailValue === '') {
+    } else if(email === '') {
         sentMessage("Email input cannot be blank.");
-    } else if(messageValue === '') {
+    } else if(message === '') {
         sentMessage("Message input cannot be blank.");
     } else {
         //the message has been sent
@@ -32,14 +32,14 @@ function checkInputs() {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const nameValue = name.value.trim();
-    const emailValue = email.value.trim();
-    const messageValue = message.value.trim();
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
 
     const formData = {
-        nameValue,
-        emailValue,
-        messageValue
+        name,
+        email,
+        message
     }
 
     $.post('/email', formData, function() {
