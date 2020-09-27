@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/077bc5e1-1ae6-4e76-b44e-c4f9a2fc1d42/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/kms-portfolio",
+    "appService.deploySubpath": "."
+}
