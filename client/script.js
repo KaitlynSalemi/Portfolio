@@ -42,9 +42,7 @@ form.addEventListener('submit', (e) => {
         message
     }
 
-    $.post('/email', formData, function() {
-        console.log('sent form data to server')
-    })
+    $.post('/email', formData)
 
     checkInputs();
 });
