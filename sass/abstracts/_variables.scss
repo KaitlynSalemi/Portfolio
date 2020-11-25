@@ -4,18 +4,18 @@ $color-background: #f7f7f7;
 $color-text-dark: #4e4e4e;
 $color-text-light: #989898;
 
-$color-primary: #e4eded;
-$color-primary-dark: #e4ededb4;
+$color-primary: #dae7e7;
+// $color-primary-dark: #e4ededb4;
+$color-primary-dark: #c1d7d7;
 $color-accent: #70cec8;
 $color-accent-dark: #56a09b;
-
 
 // FONTS
 $font-primary: 'open sans', sans-serif;
 $font-heading: span;
 @font-face {
-    font-family: challista;
-    src: url(./fonts/challista/challista.ttf);
+  font-family: challista;
+  src: url(./fonts/challista/challista.ttf);
 }
 
 //FONT-SIZE
@@ -30,15 +30,14 @@ $font-size-large-mobile: 8rem;
 $font-size-medium-mobile: 4rem;
 $font-size-small-mobile: 3rem;
 
-
 //RESPONSIVE BREAKPOINTS
-$bp-1800: 112.5em;  //1800px / 16px
-$bp-1700: 106.25em;  //1700px / 16px
-$bp-1600: 100em; 
-$bp-1500: 93.75em;  
-$bp-1400: 87.5em;  
-$bp-1300: 81.25em;  
-$bp-1200: 75em; 
+$bp-1800: 112.5em; //1800px / 16px
+$bp-1700: 106.25em; //1700px / 16px
+$bp-1600: 100em;
+$bp-1500: 93.75em;
+$bp-1400: 87.5em;
+$bp-1300: 81.25em;
+$bp-1200: 75em;
 $bp-1100: 68.75em;
 $bp-1050: 65.62em;
 $bp-900: 56.25em;
