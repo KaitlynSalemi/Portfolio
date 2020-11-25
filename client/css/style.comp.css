@@ -121,6 +121,60 @@ body {
   .btn:hover {
     background-color: #c1d7d7; }
 
+.section-contact-form__heading {
+  justify-self: center; }
+
+.section-contact-form__form input,
+.section-contact-form__form textarea {
+  padding: 1rem;
+  color: #4e4e4e;
+  border: 1px solid #4e4e4e;
+  font-family: "open sans", sans-serif; }
+  .section-contact-form__form input:focus,
+  .section-contact-form__form textarea:focus {
+    outline: none !important;
+    border: 2px solid #70cec8; }
+
+.section-contact-form__form__name {
+  display: flex;
+  flex-direction: column; }
+
+.section-contact-form__form__email {
+  display: flex;
+  flex-direction: column; }
+
+.section-contact-form__form__message {
+  display: flex;
+  flex-direction: column; }
+
+.section-contact-form__form__btn {
+  justify-self: start;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  font-family: "open sans", sans-serif;
+  color: #4e4e4e;
+  transition: transform 0.2s; }
+  .section-contact-form__form__btn:focus {
+    border: none;
+    outline: none !important; }
+  .section-contact-form__form__btn:hover {
+    background-color: #c1d7d7;
+    transform: translateY(-2px); }
+  .section-contact-form__form__btn:active {
+    transform: translateY(0); }
+
+.section-contact-form__form__sent {
+  padding-left: 15rem;
+  align-self: center;
+  color: #70cec8; }
+  @media only screen and (max-width: 56.25em) {
+    .section-contact-form__form__sent {
+      padding-left: 0;
+      text-align: end; } }
+
+.section-contact-form__fun-fact {
+  display: none; }
+
 .link-btn {
   transition: transform .2s; }
   .link-btn:link, .link-btn:visited {
@@ -271,7 +325,7 @@ body {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   display: grid;
-  grid-row-gap: 20rem; }
+  grid-row-gap: 10rem; }
   @media only screen and (max-width: 56.25em) {
     .main-container {
       grid-row-gap: 15rem; } }
@@ -476,7 +530,8 @@ body {
   .introduction__text {
     display: flex;
     justify-items: start;
-    padding-left: 5rem; }
+    padding-left: 9rem;
+    margin-right: 3rem; }
     @media only screen and (max-width: 56.25em) {
       .introduction__text {
         padding-left: 0;
@@ -491,7 +546,7 @@ body {
       font-family: span;
       font-size: 4rem;
       padding: 0 0.3rem 0.2rem 0.3rem;
-      background: linear-gradient(to top, #70cec8 45%, transparent 45%);
+      background: linear-gradient(to top, #70cec8 40%, transparent 40%);
       font-weight: 500; }
       .introduction__text__heading::before, .introduction__text__heading::after {
         content: '';
@@ -568,7 +623,10 @@ body {
   .section-projects__cards {
     justify-self: center; }
     .section-projects__cards .project-card {
-      background-color: white; }
+      background-color: white;
+      transition: transform 0.2s; }
+      .section-projects__cards .project-card:hover {
+        transform: scale(1.03); }
       .section-projects__cards .project-card__img {
         width: 100%;
         height: 100%;
@@ -584,7 +642,7 @@ body {
           margin-bottom: 1.5rem; }
         .section-projects__cards .project-card__description__paragraph {
           margin-bottom: 3rem;
-          letter-spacing: .1rem; }
+          letter-spacing: 0.1rem; }
         .section-projects__cards .project-card__description__link {
           align-self: start;
           margin-bottom: 2.5rem; }
@@ -613,11 +671,11 @@ body {
   .section-resume__download__link {
     display: flex;
     align-items: center;
-    transition: transform .2s; }
+    transition: transform 0.2s; }
     .section-resume__download__link:link, .section-resume__download__link:visited {
       color: #4e4e4e;
       text-decoration: none;
-      padding: .1rem; }
+      padding: 0.1rem; }
     .section-resume__download__link:hover {
       color: #989898;
       transform: translateY(-2px); }
@@ -626,8 +684,8 @@ body {
     .section-resume__download__link:active {
       transform: translateY(0); }
     .section-resume__download__link .download-svg-container {
-      padding-top: .2rem;
-      padding-left: .5rem; }
+      padding-top: 0.2rem;
+      padding-left: 0.5rem; }
     .section-resume__download__link .download-svg {
       fill: #4e4e4e;
       width: 1.5rem;
@@ -640,10 +698,10 @@ body {
 
 .section-resume__cards .resume-card {
   background-color: white;
-  padding: 3rem 2rem 0 2rem;
+  padding: 3rem 2rem;
   justify-items: center;
   align-content: start;
-  transition: transform .3s; }
+  transition: transform 0.3s; }
   .section-resume__cards .resume-card:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .section-resume__cards .resume-card__svg {
@@ -664,58 +722,10 @@ body {
     list-style: none;
     text-align: center; }
     .section-resume__cards .resume-card__list--item {
-      margin: .3rem; }
+      margin: 0.3rem; }
 
 .section-contact__heading {
   justify-self: center; }
-
-.section-contact__form input,
-.section-contact__form textarea {
-  padding: 1rem;
-  color: #4e4e4e;
-  border: 1px solid #4e4e4e;
-  font-family: "open sans", sans-serif; }
-  .section-contact__form input:focus,
-  .section-contact__form textarea:focus {
-    outline: none !important;
-    border: 2px solid #70cec8; }
-
-.section-contact__form__name {
-  display: flex;
-  flex-direction: column; }
-
-.section-contact__form__email {
-  display: flex;
-  flex-direction: column; }
-
-.section-contact__form__message {
-  display: flex;
-  flex-direction: column; }
-
-.section-contact__form__btn {
-  justify-self: start;
-  padding: .5rem 1.5rem;
-  border: none;
-  font-family: "open sans", sans-serif;
-  color: #4e4e4e;
-  transition: transform .2s; }
-  .section-contact__form__btn:focus {
-    border: none;
-    outline: none !important; }
-  .section-contact__form__btn:hover {
-    background-color: #c1d7d7;
-    transform: translateY(-2px); }
-  .section-contact__form__btn:active {
-    transform: translateY(0); }
-
-.section-contact__form__sent {
-  padding-left: 15rem;
-  align-self: center;
-  color: #70cec8; }
-  @media only screen and (max-width: 56.25em) {
-    .section-contact__form__sent {
-      padding-left: 0;
-      text-align: end; } }
 
 .section-contact__fun-fact {
   display: none;
@@ -724,7 +734,7 @@ body {
   margin-bottom: 15rem; }
   .section-contact__fun-fact__heading {
     font-family: span;
-    padding: 0 .3rem .2rem .3rem;
+    padding: 0 0.3rem 0.2rem 0.3rem;
     margin-right: 1rem;
     background: linear-gradient(to top, #70cec8 35%, transparent 35%);
     font-weight: 500; }

@@ -17,7 +17,8 @@
   &__text {
     display: flex;
     justify-items: start;
-    padding-left: 5rem;
+    padding-left: 9rem;
+    margin-right: 3rem;
 
     @media only screen and (max-width: $bp-900) {
       padding-left: 0;

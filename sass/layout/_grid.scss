@@ -148,7 +148,7 @@
   grid-column: 1 / -1;
 
   display: grid;
-  grid-row-gap: 20rem;
+  grid-row-gap: 10rem;
 
   @media only screen and (max-width: $bp-900) {
     grid-row-gap: 15rem;
