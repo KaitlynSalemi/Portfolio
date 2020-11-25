@@ -1,75 +1,83 @@
 .introduction {
-    justify-items: center;
+  justify-items: center;
 
-    &__block {
-        background-color: $color-primary;
-        content: "";
-        background-size: cover;
-        display: block;
-        height: 100%;
-        width: 100%;
-    }
+  &__block {
+    background-color: $color-primary;
+    content: '';
+    background-size: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 
-    &__img {
-        width: 100%;
-    }
+  &__img {
+    width: 100%;
+  }
 
-    &__text {
-        display: flex;
-        justify-items: start;
-        padding-left: 5rem;
-
-        @media only screen and (max-width: $bp-900) {
-            padding-left: 0;
-            justify-items: center;
-            align-items: center;
-            margin-top: 10rem;
-        }
-
-        @media only screen and (max-width: $bp-775) {
-            margin-top: 5rem;
-        }
-
-        &__heading {
-            margin-bottom: 1.5rem;
-        }
-        
-        &__paragraph {
-            margin-bottom: 2.7rem;
-            width: 45rem;
-
-            @media only screen and (max-width: $bp-900) {
-                text-align: center;
-                width: 35rem;
-            }
-
-            @media only screen and (max-width: $bp-420) {
-                width: 100%;
-            }
-        }
-    }
-}
-
-.down-arrow-container {
+  &__text {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .down-arrow {
-        fill: $color-text-light;
-        width: 6rem;
-        height: 6rem;
-        animation: bounce 2s infinite;
-    }
+    justify-items: start;
+    padding-left: 5rem;
 
     @media only screen and (max-width: $bp-900) {
-        margin-bottom: 5rem;
-
+      padding-left: 0;
+      justify-items: center;
+      align-items: center;
+      margin-top: 10rem;
     }
 
     @media only screen and (max-width: $bp-775) {
-        margin-bottom: 3rem;
+      margin-top: 5rem;
     }
-    
+
+    &__heading {
+      margin-bottom: 1.5rem;
+
+      @include lineHeightCrop(1.6);
+      font-family: $font-heading;
+      font-size: 4rem;
+      padding: 0 0.3rem 0.2rem 0.3rem;
+      background: linear-gradient(to top, $color-accent 40%, transparent 40%);
+      font-weight: 500;
+
+      @media only screen and (max-width: $bp-420) {
+        font-size: $font-size-large-mobile;
+      }
+    }
+
+    &__paragraph {
+      margin-bottom: 2.7rem;
+      width: 45rem;
+
+      @media only screen and (max-width: $bp-900) {
+        text-align: center;
+        width: 35rem;
+      }
+
+      @media only screen and (max-width: $bp-420) {
+        width: 100%;
+      }
+    }
+  }
 }
 
+.down-arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .down-arrow {
+    fill: $color-text-light;
+    width: 6rem;
+    height: 6rem;
+    animation: bounce 2s infinite;
+  }
+
+  @media only screen and (max-width: $bp-900) {
+    margin-bottom: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-775) {
+    margin-bottom: 3rem;
+  }
+}

@@ -113,13 +113,13 @@ body {
       font-size: 3rem; } }
 
 .btn {
-  background-color: #e4eded; }
+  background-color: #dae7e7; }
   .btn:link, .btn:visited {
     color: #4e4e4e;
     text-decoration: none;
     padding: .1rem; }
   .btn:hover {
-    background-color: #e4ededb4; }
+    background-color: #c1d7d7; }
 
 .link-btn {
   transition: transform .2s; }
@@ -446,27 +446,27 @@ body {
           grid-template-rows: repeat(2, min-content); } }
 
 .footer {
-  grid-row: 3  / 4;
+  grid-row: 3 / 4;
   grid-column: 1 / -1;
   display: grid;
   grid-template-rows: 4.1rem min-content;
   grid-template-columns: 1fr min-content 1fr;
   grid-row-gap: 3rem; }
   .footer__icons {
-    grid-row: 1  / span 1;
+    grid-row: 1 / span 1;
     grid-column: 2 / span 1;
     display: grid;
     grid-template-columns: repeat(3, 4rem);
     grid-column-gap: 10rem; }
   .footer__copyright {
-    grid-row: 2  / span 1;
+    grid-row: 2 / span 1;
     grid-column: 1 / -1; }
 
 .introduction {
   justify-items: center; }
   .introduction__block {
-    background-color: #e4eded;
-    content: "";
+    background-color: #dae7e7;
+    content: '';
     background-size: cover;
     display: block;
     height: 100%;
@@ -487,7 +487,21 @@ body {
       .introduction__text {
         margin-top: 5rem; } }
     .introduction__text__heading {
-      margin-bottom: 1.5rem; }
+      margin-bottom: 1.5rem;
+      font-family: span;
+      font-size: 4rem;
+      padding: 0 0.3rem 0.2rem 0.3rem;
+      background: linear-gradient(to top, #70cec8 45%, transparent 45%);
+      font-weight: 500; }
+      .introduction__text__heading::before, .introduction__text__heading::after {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        margin-top: calc((1 - 1.6) * 0.5em); }
+      @media only screen and (max-width: 26.25em) {
+        .introduction__text__heading {
+          font-size: 8rem; } }
     .introduction__text__paragraph {
       margin-bottom: 2.7rem;
       width: 45rem; }
@@ -549,7 +563,7 @@ body {
     justify-self: center;
     margin: 7rem 0; }
   .section-projects__block {
-    background-color: #e4eded;
+    background-color: #dae7e7;
     overflow: hidden; }
   .section-projects__cards {
     justify-self: center; }
@@ -622,7 +636,7 @@ body {
         fill: #989898; }
 
 .section-resume__block {
-  background-color: #e4eded; }
+  background-color: #dae7e7; }
 
 .section-resume__cards .resume-card {
   background-color: white;
@@ -689,7 +703,7 @@ body {
     border: none;
     outline: none !important; }
   .section-contact__form__btn:hover {
-    background-color: #e4ededb4;
+    background-color: #c1d7d7;
     transform: translateY(-2px); }
   .section-contact__form__btn:active {
     transform: translateY(0); }
