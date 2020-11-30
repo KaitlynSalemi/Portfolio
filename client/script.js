@@ -1,9 +1,19 @@
-// document.querySelector(".navigation__heading").innerHTML = "JavaScript file is working.";
 const form = document.querySelector('.section-contact__form');
 const nameInput = document.querySelector('.name-input');
 const emailInput = document.querySelector('.email-input');
 const messageInput = document.querySelector('.message-textarea');
 const sent = document.querySelector('.section-contact__form__sent');
+
+function copyToClipBoard() {
+  var copyText = document.getElementById('myEmail');
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  document.execCommand('copy');
+
+  alert('Copied the text: ' + copyText.value);
+}
 
 function sentMessage(message) {
   //change the innerHtml of the sent element
