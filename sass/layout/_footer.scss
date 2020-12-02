@@ -1,40 +1,7 @@
 .footer {
   background-color: $color-text-dark;
   align-content: center;
-  padding: 5rem 0;
-
-  // &__icons {
-  //     display: flex;
-  //     align-items: center;
-  //     flex-direction: row;
-
-  //     .icon-link {
-  //         display: flex;
-  //         align-self: center;
-  //         transition: transform .2s;
-
-  //         &__svg {
-  //             fill: $color-accent;
-  //             width: 3.5rem;
-  //             height: 3.5rem;
-  //             transition: transform .2s;
-
-  //             @media only screen and (max-width: $bp-420) {
-  //                 width: 5rem;
-  //                 height: 5rem;
-  //             }
-
-  //             &:hover {
-  //                 fill: $color-accent-dark;
-  //                 transform: translateY(-2px);
-  //             }
-
-  //             &:active {
-  //                 transform: translateY(0);
-  //             }
-  //         }
-  //     }
-  // }
+  padding: 0.5rem 0;
 
   &__copyright {
     color: $color-accent;

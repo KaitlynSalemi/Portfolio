@@ -178,38 +178,82 @@
 }
 
 .section-contact {
+  margin-bottom: 10rem;
+
   &__heading {
     justify-self: center;
+    margin-bottom: 7rem;
   }
 
   &__block {
     background-color: $color-primary;
   }
 
+  &__items {
+    align-content: center;
+
+    .contact-item {
+      &--icon {
+        justify-self: end;
+        align-self: center;
+        margin-right: 5rem;
+      }
+
+      &--info {
+        margin-left: 5rem;
+
+        &--link {
+          display: inline-block;
+          text-decoration: none;
+          border-bottom: 1px solid $color-text-dark;
+          transition: transform 0.2s;
+
+          &:link,
+          &:visited {
+            color: $color-text-dark;
+            text-decoration: none;
+            // padding: 0.1rem;
+          }
+
+          &:hover {
+            color: $color-text-light;
+            border-color: $color-text-light;
+            transform: translateY(-2px);
+
+            .copy-svg {
+              fill: $color-text-light;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .icon-link__svg {
     fill: $color-accent;
-    width: 9rem;
-    height: 9rem;
+    width: 5rem;
+    height: 5rem;
+    transition: transform 0.2s;
+
+    &:hover {
+      fill: $color-accent-dark;
+      transform: translateY(-2px);
+    }
   }
 
   .copy-svg {
     fill: $color-text-dark;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
 
     &:hover {
       fill: $color-text-light;
     }
   }
 
-  &__items {
-    .contact-item {
-      &--heading {
-      }
-      &--link {
-      }
-      &--heading {
-      }
+  #myEmail {
+    &:hover {
+      cursor: pointer;
     }
   }
 }
