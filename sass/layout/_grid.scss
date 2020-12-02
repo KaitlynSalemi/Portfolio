@@ -306,9 +306,39 @@
     grid-column: 1 / -1;
 
     display: grid;
-    grid-template-rows: repeat(3, min-content);
-    grid-template-columns: 1fr min-content 1fr;
-    grid-row-gap: 10rem;
+    grid-template-rows: min-content 5rem 38rem 5rem;
+    grid-template-columns: 1fr 21rem 79.3rem 21rem 1fr;
+
+    &__heading {
+      grid-row: 1 / span 1;
+      grid-column: 3 / span 1;
+    }
+
+    &__block {
+      grid-row: 2 / span 3;
+      grid-column: 3 / span 2;
+    }
+
+    &__items {
+      grid-row: 3 / span 1;
+      grid-column: 2 / span 1;
+
+      display: grid;
+      grid-template-rows: repeat(3, 7.35rem);
+      grid-row-gap: 5.32rem;
+
+      .contact-item {
+        display: grid;
+        grid-template-columns: 21rem 100.3rem;
+
+        &--icon {
+          grid-column: 1 / span 1;
+        }
+        &--info {
+          grid-column: 2 / span 1;
+        }
+      }
+    }
   }
 }
 

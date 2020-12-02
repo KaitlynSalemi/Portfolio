@@ -173,7 +173,40 @@ body {
       text-align: end; } }
 
 .section-contact-form__fun-fact {
-  display: none; }
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rem; }
+  .section-contact-form__fun-fact__heading {
+    font-family: span;
+    padding: 0 0.3rem 0.2rem 0.3rem;
+    margin-right: 1rem;
+    background: linear-gradient(to top, #70cec8 35%, transparent 35%);
+    font-weight: 500; }
+    .section-contact-form__fun-fact__heading::before, .section-contact-form__fun-fact__heading::after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      margin-top: calc((1 - 1.6) * 0.5em); }
+  .section-contact-form__fun-fact__paragraph {
+    align-self: flex-end; }
+  .section-contact-form__fun-fact__link {
+    color: #70cec8; }
+    .section-contact-form__fun-fact__link:hover {
+      color: #56a09b; }
+  @media only screen and (max-width: 56.25em) {
+    .section-contact-form__fun-fact {
+      display: none !important;
+      text-align: center;
+      padding: 0 10rem; }
+      .section-contact-form__fun-fact__heading {
+        margin: 0 auto;
+        margin-bottom: 2rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .section-contact-form__fun-fact {
+      display: none !important;
+      padding: 0; } }
 
 .section-contact-form {
   grid-row: 3 / span 1;
@@ -481,9 +514,27 @@ body {
     grid-row: 3 / span 1;
     grid-column: 1 / -1;
     display: grid;
-    grid-template-rows: repeat(3, min-content);
-    grid-template-columns: 1fr min-content 1fr;
-    grid-row-gap: 10rem; }
+    grid-template-rows: min-content 5rem 38rem 5rem;
+    grid-template-columns: 1fr 21rem 79.3rem 21rem 1fr; }
+    .main-container .section-contact__heading {
+      grid-row: 1 / span 1;
+      grid-column: 3 / span 1; }
+    .main-container .section-contact__block {
+      grid-row: 2 / span 3;
+      grid-column: 3 / span 2; }
+    .main-container .section-contact__items {
+      grid-row: 3 / span 1;
+      grid-column: 2 / span 1;
+      display: grid;
+      grid-template-rows: repeat(3, 7.35rem);
+      grid-row-gap: 5.32rem; }
+      .main-container .section-contact__items .contact-item {
+        display: grid;
+        grid-template-columns: 21rem 100.3rem; }
+        .main-container .section-contact__items .contact-item--icon {
+          grid-column: 1 / span 1; }
+        .main-container .section-contact__items .contact-item--info {
+          grid-column: 2 / span 1; }
 
 .footer {
   grid-row: 3 / 4;
@@ -707,38 +758,17 @@ body {
 .section-contact__heading {
   justify-self: center; }
 
-.section-contact__fun-fact {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15rem; }
-  .section-contact__fun-fact__heading {
-    font-family: span;
-    padding: 0 0.3rem 0.2rem 0.3rem;
-    margin-right: 1rem;
-    background: linear-gradient(to top, #70cec8 35%, transparent 35%);
-    font-weight: 500; }
-    .section-contact__fun-fact__heading::before, .section-contact__fun-fact__heading::after {
-      content: '';
-      display: block;
-      height: 0;
-      width: 0;
-      margin-top: calc((1 - 1.6) * 0.5em); }
-  .section-contact__fun-fact__paragraph {
-    align-self: flex-end; }
-  .section-contact__fun-fact__link {
-    color: #70cec8; }
-    .section-contact__fun-fact__link:hover {
-      color: #56a09b; }
-  @media only screen and (max-width: 56.25em) {
-    .section-contact__fun-fact {
-      display: none !important;
-      text-align: center;
-      padding: 0 10rem; }
-      .section-contact__fun-fact__heading {
-        margin: 0 auto;
-        margin-bottom: 2rem; } }
-  @media only screen and (max-width: 26.25em) {
-    .section-contact__fun-fact {
-      display: none !important;
-      padding: 0; } }
+.section-contact__block {
+  background-color: #dae7e7; }
+
+.section-contact .icon-link__svg {
+  fill: #70cec8;
+  width: 9rem;
+  height: 9rem; }
+
+.section-contact .copy-svg {
+  fill: #4e4e4e;
+  width: 1.5rem;
+  height: 1.5rem; }
+  .section-contact .copy-svg:hover {
+    fill: #989898; }

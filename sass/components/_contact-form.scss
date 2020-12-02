@@ -69,6 +69,47 @@
 
   &__fun-fact {
     display: none;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+
+    &__heading {
+      @include lineHeightCrop(1.6);
+      font-family: $font-heading;
+      padding: 0 0.3rem 0.2rem 0.3rem;
+      margin-right: 1rem;
+      background: linear-gradient(to top, $color-accent 35%, transparent 35%);
+      font-weight: 500;
+    }
+
+    &__paragraph {
+      align-self: flex-end;
+    }
+
+    &__link {
+      color: $color-accent;
+
+      &:hover {
+        color: $color-accent-dark;
+      }
+    }
+
+    @media only screen and (max-width: $bp-900) {
+      display: none !important;
+      text-align: center;
+      padding: 0 10rem;
+
+      &__heading {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media only screen and (max-width: $bp-420) {
+      display: none !important;
+      padding: 0;
+    }
   }
 }
 
