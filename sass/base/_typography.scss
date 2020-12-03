@@ -1,46 +1,45 @@
 .heading-1 {
-    font-family: challista, leander-script-pro, sans-serif;
-    font-size: $font-size-xlarge;
-    font-weight: 100;
-    line-height: 1;
-    letter-spacing: 0;
+  font-family: challista, leander-script-pro, sans-serif;
+  font-size: $font-size-xlarge;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: 0;
 
-    @media only screen and (max-width: $bp-420) {
-        font-size: $font-size-xlarge-mobile;
-    }
+  @media only screen and (max-width: $bp-420) {
+    font-size: $font-size-xlarge-mobile;
+  }
 }
 
 .heading-2 {
-    @include lineHeightCrop(1.6);
-    font-family: $font-heading;
-    font-size: $font-size-large;
-    padding: 0 .3rem .2rem .3rem;
-    background: linear-gradient(to top, $color-accent 35%, transparent 35%);
-    font-weight: 500;
+  @include lineHeightCrop(1.6);
+  font-family: $font-heading;
+  font-size: $font-size-large;
+  padding: 0 0.3rem 0.2rem 0.3rem;
+  background: linear-gradient(to top, $color-accent 35%, transparent 35%);
+  font-weight: 500;
 
-    @media only screen and (max-width: $bp-420) {
-        font-size: $font-size-large-mobile;
-    }
+  @media only screen and (max-width: $bp-420) {
+    font-size: $font-size-large-mobile;
+  }
 }
 
 .heading-3,
 .font-medium {
-    font-size: $font-size-medium;
-    font-weight: 500;
-    
-    @media only screen and (max-width: $bp-420) {
-        // font-weight: 600;
-        font-size: $font-size-medium-mobile;
-    }
+  font-size: $font-size-medium;
+  font-weight: 500;
+
+  @media only screen and (max-width: $bp-420) {
+    // font-weight: 600;
+    font-size: $font-size-medium-mobile;
+  }
 }
 
 .font-small {
-    font-size: $font-size-small;
-    font-weight: 500;
+  font-size: $font-size-small;
+  font-weight: 500;
 
-    @media only screen and (max-width: $bp-420) {
-        // font-weight: 600;
-        font-size: $font-size-small-mobile;
-    }
+  @media only screen and (max-width: $bp-420) {
+    // font-weight: 600;
+    font-size: $font-size-small-mobile;
+  }
 }
-

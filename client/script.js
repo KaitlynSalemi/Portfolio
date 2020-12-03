@@ -5,14 +5,13 @@ const messageInput = document.querySelector('.message-textarea');
 const sent = document.querySelector('.section-contact__form__sent');
 
 function copyToClipBoard() {
-  var copyText = document.getElementById('myEmail');
-
+  // console.log('clicked');
+  var copyText = document.getElementById('myEmail').innerText;
+  console.log(copyText);
   copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
   document.execCommand('copy');
 
-  alert('Copied the text: ' + copyText.value);
+  alert(`Email copied to clipboard!`);
 }
 
 function sentMessage(message) {
@@ -39,20 +38,22 @@ function checkInputs() {
   }
 }
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
+// form.addEventListener('submit', e => {
+//   e.preventDefault();
 
-  const name = nameInput.value.trim();
-  const email = emailInput.value.trim();
-  const message = messageInput.value.trim();
+//   const name = nameInput.value.trim();
+//   const email = emailInput.value.trim();
+//   const message = messageInput.value.trim();
 
-  const formData = {
-    name,
-    email,
-    message,
-  };
+//   const formData = {
+//     name,
+//     email,
+//     message,
+//   };
 
-  $.post('/email', formData);
+//   $.post('/email', formData);
 
-  checkInputs();
-});
+//   checkInputs();
+// });
+
+// document.getElementById('myEmail').addEventListener('click', copyToClipBoard);

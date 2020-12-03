@@ -307,7 +307,7 @@
 
     display: grid;
     grid-template-rows: min-content 5rem 38rem 5rem;
-    grid-template-columns: 1fr 21rem 58.3rem 21rem 1fr;
+    grid-template-columns: 1fr 21.1rem 60rem 21.1rem 1fr;
 
     &__heading {
       grid-row: 1 / span 1;
@@ -329,7 +329,7 @@
 
       .contact-item {
         display: grid;
-        grid-template-columns: 21rem 58.3rem;
+        grid-template-columns: 21.1rem 60rem;
 
         &--icon {
           grid-column: 1 / span 1;

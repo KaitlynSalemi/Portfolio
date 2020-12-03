@@ -83,7 +83,7 @@ body {
 .heading-2 {
   font-family: span;
   font-size: 5rem;
-  padding: 0 .3rem .2rem .3rem;
+  padding: 0 0.3rem 0.2rem 0.3rem;
   background: linear-gradient(to top, #70cec8 35%, transparent 35%);
   font-weight: 500; }
   .heading-2::before, .heading-2::after {
@@ -515,7 +515,7 @@ body {
     grid-column: 1 / -1;
     display: grid;
     grid-template-rows: min-content 5rem 38rem 5rem;
-    grid-template-columns: 1fr 21rem 58.3rem 21rem 1fr; }
+    grid-template-columns: 1fr 21.1rem 60rem 21.1rem 1fr; }
     .main-container .section-contact__heading {
       grid-row: 1 / span 1;
       grid-column: 3 / span 1; }
@@ -530,7 +530,7 @@ body {
       grid-row-gap: 8rem; }
       .main-container .section-contact__items .contact-item {
         display: grid;
-        grid-template-columns: 21rem 58.3rem; }
+        grid-template-columns: 21.1rem 60rem; }
         .main-container .section-contact__items .contact-item--icon {
           grid-column: 1 / span 1; }
         .main-container .section-contact__items .contact-item--info {
