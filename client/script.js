@@ -5,13 +5,20 @@ const messageInput = document.querySelector('.message-textarea');
 const sent = document.querySelector('.section-contact__form__sent');
 
 function copyToClipBoard() {
-  // console.log('clicked');
-  var copyText = document.getElementById('myEmail').innerText;
+  const copyText = document.getElementById('myEmail').innerText;
   console.log(copyText);
-  copyText.select();
+
+  const tempInput = document.createElement('input');
+  tempInput.type = 'text';
+  tempInput.value = copyText;
+
+  document.body.appendChild(tempInput);
+  tempInput.select();
   document.execCommand('copy');
 
   alert(`Email copied to clipboard!`);
+
+  document.body.removeChild(tempInput);
 }
 
 function sentMessage(message) {
