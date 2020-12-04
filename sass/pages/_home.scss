@@ -197,10 +197,26 @@
         justify-self: end;
         align-self: center;
         margin-right: 5rem;
+
+        @media only screen and (max-width: $bp-900) {
+          margin-right: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-420) {
+          margin-right: 5rem;
+        }
       }
 
       &--info {
         margin-left: 5rem;
+
+        @media only screen and (max-width: $bp-900) {
+          margin-left: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-420) {
+          margin-left: 5rem;
+        }
 
         &--link {
           display: inline-block;
@@ -239,12 +255,27 @@
       fill: $color-accent-dark;
       transform: translateY(-2px);
     }
+
+    @media only screen and (max-width: $bp-900) {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-420) {
+      width: 7rem;
+      height: 7rem;
+    }
   }
 
   .copy-svg {
     fill: $color-text-dark;
     width: 2rem;
     height: 2rem;
+
+    @media only screen and (max-width: $bp-420) {
+      width: 3rem;
+      height: 3rem;
+    }
 
     &:hover {
       fill: $color-text-light;
