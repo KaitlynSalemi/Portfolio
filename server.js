@@ -12,9 +12,9 @@ app.use(express.json());
 app.use(express.static(__dirname + '/client'));
 
 // Routes
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, '/client/index.html'));
-// });
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '/client/index.html'));
+});
 
 app.post('/email', (req, res) => {
   const { name, email, message } = req.body;
