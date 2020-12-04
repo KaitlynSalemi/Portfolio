@@ -6,7 +6,6 @@ const sent = document.querySelector('.section-contact__form__sent');
 
 function copyToClipBoard() {
   const copyText = document.getElementById('myEmail').innerText;
-  console.log(copyText);
 
   const tempInput = document.createElement('input');
   tempInput.type = 'text';
